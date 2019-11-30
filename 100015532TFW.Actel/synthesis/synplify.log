@@ -1,0 +1,103 @@
+
+Starting:    C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\mbin\synbatch.exe
+Install:     C:\Microsemi\Libero_SoC_v11.9\SynplifyPro
+Hostname:    YALONG-PC
+Date:        Sat Nov 30 14:17:00 2019
+Version:     L-2016.09M-SP1-5
+
+Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log top_100015532TFW_syn.tcl
+ProductType: synplify_pro
+
+License checkout: synplifypro_actel
+License: synplifypro_actel node-locked 
+Licensed Vendor: actel
+License Option: actel_oem
+
+Running in Vendor Mode
+
+
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+Warning: File already exists in project: "D:\git\ATE-FW-100015532\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc"
+"maxfan_hard3" is unrecognized option for current device
+
+log file: "D:\git\ATE-FW-100015532\100015532TFW.Actel\synthesis\top_100015532TFW.srr"
+
+Running: synthesis in foreground
+
+
+
+Running top_100015532TFW_syn|synthesis
+
+
+Running: compile (Compile) on top_100015532TFW_syn|synthesis
+# Sat Nov 30 14:17:00 2019
+
+
+Running: compile_flow (Compile Process) on top_100015532TFW_syn|synthesis
+# Sat Nov 30 14:17:00 2019
+
+
+Running: compiler (Compile Input) on top_100015532TFW_syn|synthesis
+# Sat Nov 30 14:17:00 2019
+
+compiler exited with errors
+
+Job failed on: top_100015532TFW_syn|synthesis
+
+
+Job: "compiler" terminated with error status: 2
+See log file: "D:\git\ATE-FW-100015532\100015532TFW.Actel\synthesis\synlog\top_100015532TFW_compiler.srr"
+# Sat Nov 30 14:17:01 2019
+
+Return Code: 2
+Run Time:00h:00m:01s
+
+Complete: Compile Process on top_100015532TFW_syn|synthesis
+
+Complete: Compile on top_100015532TFW_syn|synthesis
+
+Complete: Logic Synthesis on top_100015532TFW_syn|synthesis
+
+Error: At line 2 while processing "top_100015532TFW_syn.tcl"
+2
+
+TCL script complete: "top_100015532TFW_syn.tcl"
+
+TCL script had errors: "top_100015532TFW_syn.tcl"
+
+exit status=9
+
+exit status=9
+
+License checkin: synplifypro_actel
+

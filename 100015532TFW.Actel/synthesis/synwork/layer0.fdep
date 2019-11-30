@@ -1,0 +1,142 @@
+#OPTIONS:"|-layerid|0|-orig_srs|D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\synthesis\\synwork\\top_100015532TFW_comp.srs|-top|top_100015532TFW|-prodtype|synplify_pro|-nram|-fixsmult|-preserve_registers|-divnmod|-I|D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\proasic3e.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\bin64\\c_ver.exe":1509315136
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\proasic3e.v":1508984288
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\hypermods.v":1508986328
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\umr_capim.v":1508986328
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1508986328
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1508986328
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\CLK_DIV.V":1304694360
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\dual_port_ram.v":1304002794
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\ADC_AD7663AS.V":1575079398
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\AdderDecode.v":1303936120
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\Timer_Counter.v":1303936214
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\BRAKE_CONT.v":1304631212
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\BRIDGE_CONT.v":1304628826
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\CAN_SJA1000.v":1304005012
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\ClkGen.v":1304694310
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\DAC_AD8803AR.v":1303944184
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\smartgen\\Clock16x\\Clock16x.v":1303923278
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\manchester_decoder.v":1304008570
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\manchester_encoder.v":1303939112
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\manchester_ed.v":1224829102
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\smartgen\\Ram2048x8_DPort\\Ram2048x8_DPort.v":1304006854
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\smartgen\\Ram2048x8_TPort\\Ram2048x8_TPort.v":1304006640
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\enet_if.v":1304352056
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\smartgen\\Ram256x11_TPort\\Ram256x11_TPort.v":1304006106
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\smartgen\\Ram256x9_DPort\\Ram256x9_DPort.v":1304005776
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\HOTLink_CY7C9689A.v":1304972562
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\LED_CONTROL.v":1303944178
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\MEL.v":1303946168
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\Oscillator_Counter.v":1303944222
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\pci_emu_target.v":1304357206
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\RS485.v":1304352288
+#CUR:"D:\\git\\ATE-FW-100015532\\100015532TFW.Actel\\hdl\\top_100015532-TFW.v":1304698312
+#numinternalfiles:5
+#defaultlanguage:verilog
+0			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\CLK_DIV.V" verilog
+1			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\dual_port_ram.v" verilog
+2			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\ADC_AD7663AS.V" verilog
+3			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\AdderDecode.v" verilog
+4			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\Timer_Counter.v" verilog
+5			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\BRAKE_CONT.v" verilog
+6			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\BRIDGE_CONT.v" verilog
+7			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\CAN_SJA1000.v" verilog
+8			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\ClkGen.v" verilog
+9			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\DAC_AD8803AR.v" verilog
+10			"D:\git\ATE-FW-100015532\100015532TFW.Actel\smartgen\Clock16x\Clock16x.v" verilog
+11			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\manchester_decoder.v" verilog
+12			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\manchester_encoder.v" verilog
+13			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\manchester_ed.v" verilog
+14			"D:\git\ATE-FW-100015532\100015532TFW.Actel\smartgen\Ram2048x8_DPort\Ram2048x8_DPort.v" verilog
+15			"D:\git\ATE-FW-100015532\100015532TFW.Actel\smartgen\Ram2048x8_TPort\Ram2048x8_TPort.v" verilog
+16			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\enet_if.v" verilog
+17			"D:\git\ATE-FW-100015532\100015532TFW.Actel\smartgen\Ram256x11_TPort\Ram256x11_TPort.v" verilog
+18			"D:\git\ATE-FW-100015532\100015532TFW.Actel\smartgen\Ram256x9_DPort\Ram256x9_DPort.v" verilog
+19			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\HOTLink_CY7C9689A.v" verilog
+20			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\LED_CONTROL.v" verilog
+21			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\MEL.v" verilog
+22			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\Oscillator_Counter.v" verilog
+23			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\pci_emu_target.v" verilog
+24			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\RS485.v" verilog
+25			"D:\git\ATE-FW-100015532\100015532TFW.Actel\hdl\top_100015532-TFW.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 0 1
+3 -1
+4 -1
+5 4
+6 4
+7 -1
+8 0
+9 0
+10 -1
+11 -1
+12 -1
+13 11 12
+14 -1
+15 -1
+16 10 14 15 13
+17 -1
+18 -1
+19 0 17 18
+20 -1
+21 4
+22 4
+23 -1
+24 -1
+25 23 7 22 2 24 6 5 9 21 19 20 8 16 3
+#Dependency Lists(Users Of)
+0 2 8 9 19
+1 2
+2 25
+3 25
+4 5 6 21 22
+5 25
+6 25
+7 25
+8 25
+9 25
+10 16
+11 13
+12 13
+13 16
+14 16
+15 16
+16 25
+17 19
+18 19
+19 25
+20 25
+21 25
+22 25
+23 25
+24 25
+25 -1
+#Design Unit to File Association
+module work CLOCK_DIV 0
+module work DP_RAM_2R_1W 1
+module work ADC_AD7663AS 2
+module work AdderDecode 3
+module work TIMER_COUNTER 4
+module work BRAKE_CONT 5
+module work BRIDGE_CONT 6
+module work CAN_SJA1000 7
+module work ClkGen 8
+module work DAC_AD8803AR 9
+module work Clock16x 10
+module work md 11
+module work me 12
+module work MED 13
+module work Ram2048x8_DPort 14
+module work Ram2048x8_TPort 15
+module work ENETIF 16
+module work Ram256x11_TPort 17
+module work Ram256x9_DPort 18
+module work HOTLink_CY7C9689A 19
+module work LED_CONTROL 20
+module work MEL 21
+module work OSCILLATOR_COUNTER 22
+module work PCI_EMU_TARGET 23
+module work RS485 24
+module work top_100015532TFW 25
