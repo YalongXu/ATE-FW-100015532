@@ -1,0 +1,81 @@
+#add_file options
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/hdl/pci_emu_target.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/hdl/CAN_SJA1000.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/hdl/Timer_Counter.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/hdl/Oscillator_Counter.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/hdl/RS485.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/hdl/BRIDGE_CONT.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/hdl/BRAKE_CONT.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/hdl/CLK_DIV.V"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/hdl/DAC_AD8803AR.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/hdl/MEL.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/smartgen/Ram256x11_TPort/Ram256x11_TPort.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/smartgen/Ram256x9_DPort/Ram256x9_DPort.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/hdl/HOTLink_CY7C9689A.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/hdl/LED_CONTROL.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/hdl/ClkGen.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/smartgen/Clock16x/Clock16x.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/smartgen/Ram2048x8_DPort/Ram2048x8_DPort.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/smartgen/Ram2048x8_TPort/Ram2048x8_TPort.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/hdl/manchester_decoder.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/hdl/manchester_encoder.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/hdl/manchester_ed.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/hdl/enet_if.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/hdl/AdderDecode.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/smartgen/Ram4096x16_TPort/Ram4096x16_TPort.v"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/hdl/ADC_AD7663AS.V"
+add_file -verilog "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/hdl/top_100015532-TFW.v"
+add_file -constraint "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/constraint/top_100015532TFW_synth.sdc"
+set_option -top_module top_100015532TFW
+
+#device options
+set_option -technology ProASIC3E
+set_option -part A3PE3000
+set_option -vlog_std v2001
+
+
+#project files
+
+#implementation: "synthesis"
+impl -add synthesis -type fpga
+
+#
+#implementation attributes
+
+set_option -package FBGA896
+#compilation/mapping options
+# mapper_options
+set_option -frequency 40.000000
+set_option -auto_constrain_io 1
+set_option -write_verilog 0
+set_option -write_vhdl 0
+# Actel 500K
+set_option -run_prop_extract 1
+set_option -maxfan 24
+set_option -maxfan_hard3 0
+set_option -retiming 1
+set_option -report_path 0
+set_option -opcond COMWC
+set_option -update_models_cp 1
+set_option -preserve_registers 1
+# Actel 500K
+set_option -globalthreshold 50
+
+# NFilter
+set_option -popfeed 0
+set_option -constprop 0
+set_option -createhierarchy 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+impl -active "synthesis"
+project -result_file "T:/Test Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/synthesis/top_100015532TFW.edn"

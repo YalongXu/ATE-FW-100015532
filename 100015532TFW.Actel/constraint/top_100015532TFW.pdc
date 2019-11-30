@@ -1,0 +1,335 @@
+# Actel Physical design constraints file
+# Family: ProASIC3E, Die: A3PE3000 , Package: 484 FBGA
+
+
+# 
+# IO banks setting
+# 
+
+
+# 
+# I/O constraints
+# 
+
+set_io ACC_HW_RESETB      -pinname N2    -fixed yes  -iostd LVCMOS33
+set_io ACC_HW_STATUSB     -pinname AK22  -fixed yes  -iostd LVCMOS33
+set_io ACC_LED_PWR_EN     -pinname C22   -fixed yes  -iostd LVCMOS33
+set_io ACC_LEDGRN         -pinname D21   -fixed yes  -iostd LVCMOS33
+set_io ACC_LEDRED         -pinname C21   -fixed yes  -iostd LVCMOS33
+set_io ACC_RST_LMP_CNTL   -pinname D20   -fixed yes  -iostd LVCMOS33
+set_io ACC_TG_COLL        -pinname AH21  -fixed yes  -iostd LVCMOS33
+set_io AD_BUSY1           -pinname AE26  -fixed yes  -iostd LVCMOS33
+set_io AD_BUSY2           -pinname AD27  -fixed yes  -iostd LVCMOS33
+set_io AD_SDOUT1          -pinname AD29  -fixed yes  -iostd LVCMOS33
+set_io AD_SDOUT2          -pinname AC28  -fixed yes  -iostd LVCMOS33
+set_io AD_SEL<0>          -pinname AG21  -fixed yes  -iostd LVCMOS33
+set_io AD_SEL<1>          -pinname AJ19  -fixed yes  -iostd LVCMOS33
+set_io AD_SEL<2>          -pinname AH19  -fixed yes  -iostd LVCMOS33
+set_io AD_SEL<3>          -pinname AG24  -fixed yes  -iostd LVCMOS33
+set_io AD_SEL<4>          -pinname AG19  -fixed yes  -iostd LVCMOS33
+set_io AD_SEL<5>          -pinname AG17  -fixed yes  -iostd LVCMOS33
+set_io AD_SEL<6>          -pinname AG16  -fixed yes  -iostd LVCMOS33
+set_io AD1_CNVSTB         -pinname AJ26  -fixed yes  -iostd LVCMOS33
+set_io AD1_SCLK           -pinname AE27  -fixed yes  -iostd LVCMOS33
+set_io AD2_CNVSTB         -pinname AG26  -fixed yes  -iostd LVCMOS33
+set_io AD2_SCLK           -pinname AK27  -fixed yes  -iostd LVCMOS33
+set_io AMTX_IN            -pinname J5    -fixed yes  -iostd LVCMOS33
+set_io BMPLS              -pinname AK10  -fixed yes  -iostd LVCMOS33
+set_io CAN_AD<0>          -pinname Y1    -fixed yes  -iostd LVCMOS33
+set_io CAN_AD<1>          -pinname AA2   -fixed yes  -iostd LVCMOS33
+set_io CAN_AD<2>          -pinname AA1   -fixed yes  -iostd LVCMOS33
+set_io CAN_AD<3>          -pinname AA3   -fixed yes  -iostd LVCMOS33
+set_io CAN_AD<4>          -pinname AC1   -fixed yes  -iostd LVCMOS33
+set_io CAN_AD<5>          -pinname AC2   -fixed yes  -iostd LVCMOS33
+set_io CAN_AD<6>          -pinname AB2   -fixed yes  -iostd LVCMOS33
+set_io CAN_AD<7>          -pinname AB1   -fixed yes  -iostd LVCMOS33
+set_io CAN_ALE            -pinname AD2   -fixed yes  -iostd LVCMOS33
+set_io CAN_BUF_DIR1       -pinname V2    -fixed yes  -iostd LVCMOS33
+set_io CAN_CCLK       -pinname AG1   -fixed yes  -iostd LVCMOS33
+set_io CAN_CS1        -pinname W2    -fixed yes  -iostd LVCMOS33
+set_io CAN_CS2        -pinname AF2   -fixed yes  -iostd LVCMOS33
+set_io CAN_INT1       -pinname AH2   -fixed yes  -iostd LVCMOS33
+set_io CAN_INT2       -pinname P1    -fixed yes  -iostd LVCMOS33
+set_io CAN_RD         -pinname Y3    -fixed yes  -iostd LVCMOS33
+set_io CAN_RST        -pinname P2    -fixed yes  -iostd LVCMOS33
+set_io CAN_RX         -pinname AH20  -fixed yes  -iostd LVCMOS33
+set_io CAN_TX         -pinname AJ21  -fixed yes  -iostd LVCMOS33
+set_io CAN_WR         -pinname Y2    -fixed yes  -iostd LVCMOS33
+set_io CE1B           -pinname C16   -fixed yes  -iostd LVCMOS33
+set_io CE2B           -pinname C20   -fixed yes  -iostd LVCMOS33
+set_io CNTL_FPGA0         -pinname AC27  -fixed yes  -iostd LVCMOS33
+set_io CNTL_FPGA1         -pinname AA26  -fixed yes  -iostd LVCMOS33
+set_io CNTL_FPGA2         -pinname AB26  -fixed yes  -iostd LVCMOS33
+set_io CNTL_FPGA3         -pinname AC26  -fixed yes  -iostd LVCMOS33
+set_io CNTL_FPGA4         -pinname AB27  -fixed yes  -iostd LVCMOS33
+set_io CNTL_FPGA5         -pinname AJ7   -fixed yes  -iostd LVCMOS33
+set_io COLL_CLK_OUT       -pinname AK25  -fixed yes  -iostd LVCMOS33
+set_io COLL_CS_OUTB       -pinname N1    -fixed yes  -iostd LVCMOS33
+set_io COLL_DETECT        -pinname AG30  -fixed yes  -iostd LVCMOS33
+set_io COLL_DETECTB       -pinname AJ22  -fixed yes  -iostd LVCMOS33
+set_io COLL_SP1_IN        -pinname AD28  -fixed yes  -iostd LVCMOS33
+set_io COLL_SP2_IN        -pinname AE30  -fixed yes  -iostd LVCMOS33
+set_io COLLISION_IN       -pinname AH22  -fixed yes  -iostd LVCMOS33
+set_io COLLISION_OUT      -pinname AJ23  -fixed yes  -iostd LVCMOS33
+set_io COLLISION_PWR_EN   -pinname AH23  -fixed yes  -iostd LVCMOS33
+set_io CPLD_VERSION<0>    -pinname AH16  -fixed yes  -iostd LVCMOS33
+set_io CPLD_VERSION<1>    -pinname AK14  -fixed yes  -iostd LVCMOS33
+set_io CPLD_VERSION<2>    -pinname AH12  -fixed yes  -iostd LVCMOS33
+set_io CPLD_VERSION<3>    -pinname AJ12  -fixed yes  -iostd LVCMOS33
+set_io CPLD_VERSION<4>    -pinname AH11  -fixed yes  -iostd LVCMOS33
+set_io CPLD_VERSION<5>    -pinname AJ11  -fixed yes  -iostd LVCMOS33
+set_io CPLD_VERSION<6>    -pinname AJ16  -fixed yes  -iostd LVCMOS33
+set_io CPLD_VERSION<7>    -pinname AK12  -fixed yes  -iostd LVCMOS33
+set_io EATX_IN            -pinname K5    -fixed yes  -iostd LVCMOS33
+set_io EN_12VB            -pinname AK20  -fixed yes  -iostd LVCMOS33
+set_io FPGA_DONE          -pinname AJ17  -fixed yes  -iostd LVCMOS33
+set_io FPGA2CPLD_CLK      -pinname T4    -fixed yes  -iostd LVCMOS33
+set_io HEARTBEAT          -pinname AG23  -fixed yes  -iostd LVCMOS33
+set_io HW_REV<0>          -pinname M2    -fixed yes  -iostd LVCMOS33
+set_io HW_REV<1>          -pinname M3    -fixed yes  -iostd LVCMOS33
+set_io HW_REV<2>          -pinname N4    -fixed yes  -iostd LVCMOS33
+#set_io IDSELB             -pinname no support  -fixed yes  -iostd LVCMOS33
+set_io ILIM_DAC_CLK       -pinname AK23  -fixed yes  -iostd LVCMOS33
+set_io ILIM_DAC_CS        -pinname AG22  -fixed yes  -iostd LVCMOS33
+set_io ILIM_DAC_SDI       -pinname AK21  -fixed yes  -iostd LVCMOS33
+set_io IMTX_IN            -pinname K4    -fixed yes  -iostd LVCMOS33
+set_io KVBENLP_CNTL       -pinname W27   -fixed yes  -iostd LVCMOS33
+set_io KVBENLP_STATE      -pinname Y27   -fixed yes  -iostd LVCMOS33
+set_io LFI1B              -pinname K3    -fixed yes  -iostd LVCMOS33
+set_io LFI2B              -pinname J1    -fixed yes  -iostd LVCMOS33
+set_io LP_MUX_EN          -pinname AH24  -fixed yes  -iostd LVCMOS33
+set_io LP_MUX_S<0>        -pinname AJ24  -fixed yes  -iostd LVCMOS33
+set_io LP_MUX_S<1>        -pinname AG25  -fixed yes  -iostd LVCMOS33
+set_io LP_MUX_S<2>        -pinname AH25  -fixed yes  -iostd LVCMOS33
+set_io MEL_ACK            -pinname AG15  -fixed yes  -iostd LVCMOS33
+set_io MEL_BUS<1>         -pinname AJ9   -fixed yes  -iostd LVCMOS33
+set_io MEL_BUS<2>         -pinname AH7   -fixed yes  -iostd LVCMOS33
+set_io MEL_BUS<3>         -pinname AK9   -fixed yes  -iostd LVCMOS33
+set_io MEL_BUS<4>         -pinname AK8   -fixed yes  -iostd LVCMOS33
+set_io MEL_ENABLE         -pinname AK16  -fixed yes  -iostd LVCMOS33
+set_io MEL_ERROR          -pinname AH14  -fixed yes  -iostd LVCMOS33
+set_io MEL_ERROR_RESET    -pinname AH15  -fixed yes  -iostd LVCMOS33
+set_io MEL_INT            -pinname AJ15  -fixed yes  -iostd LVCMOS33
+set_io MEL_XTRA<1>        -pinname AK17  -fixed yes  -iostd LVCMOS33
+set_io MEL_XTRA<2>        -pinname AK15  -fixed yes  -iostd LVCMOS33
+set_io MEL_XTRA<3>        -pinname AJ14  -fixed yes  -iostd LVCMOS33
+set_io P_OVLB             -pinname C24   -fixed yes  -iostd LVCMOS33
+set_io P_SWB<0>           -pinname A25   -fixed yes  -iostd LVCMOS33
+set_io P_SWB<1>           -pinname B26   -fixed yes  -iostd LVCMOS33
+set_io P_SWB<10>          -pinname B24   -fixed yes  -iostd LVCMOS33
+set_io P_SWB<11>          -pinname D23   -fixed yes  -iostd LVCMOS33
+set_io P_SWB<2>       -pinname A23   -fixed yes  -iostd LVCMOS33
+set_io P_SWB<3>       -pinname B23   -fixed yes  -iostd LVCMOS33
+set_io P_SWB<4>       -pinname D22   -fixed yes  -iostd LVCMOS33
+set_io P_SWB<5>       -pinname C23   -fixed yes  -iostd LVCMOS33
+set_io P_SWB<6>       -pinname R26   -fixed yes  -iostd LVCMOS33
+set_io P_SWB<7>       -pinname R25   -fixed yes  -iostd LVCMOS33
+set_io P_SWB<8>       -pinname P27   -fixed yes  -iostd LVCMOS33
+set_io P_SWB<9>       -pinname P26   -fixed yes  -iostd LVCMOS33
+set_io P24V_PGOODB        -pinname C29   -fixed yes  -iostd LVCMOS33
+set_io P28V_PGOOD_JAWB    -pinname AB30  -fixed yes  -iostd LVCMOS33
+set_io P28V_PGOOD_ROTB    -pinname V28   -fixed yes  -iostd LVCMOS33
+set_io PCAN_RX            -pinname R23   -fixed yes  -iostd LVCMOS33
+set_io PCAN_TX            -pinname K6    -fixed yes  -iostd LVCMOS33
+set_io PCI_AD<0>          -pinname B8    -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<1>          -pinname C9    -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<10>         -pinname B11   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<11>         -pinname B10   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<12>         -pinname A11   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<13>         -pinname A12   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<14>         -pinname B12   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<15>         -pinname C11   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<16>         -pinname D14   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<17>         -pinname A18   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<18>         -pinname A19   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<19>         -pinname A14   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<2>          -pinname C8    -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<20>         -pinname B15   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<21>         -pinname B16   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<22>         -pinname A16   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<23>         -pinname B14   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<24>         -pinname A15   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<25>         -pinname A21   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<26>         -pinname B20   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<27>         -pinname A17   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<28>         -pinname B17   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<29>         -pinname B19   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<3>          -pinname B9    -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<30>         -pinname B18   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<31>         -pinname A22   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<4>          -pinname A9    -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<5>          -pinname A6    -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<6>          -pinname E12   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<7>          -pinname C10   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<8>          -pinname A8    -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_AD<9>          -pinname A10   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_CBE<0>         -pinname C12   -fixed yes  -iostd LVCMOS33
+set_io PCI_CBE<1>         -pinname C13   -fixed yes  -iostd LVCMOS33
+set_io PCI_CBE<2>         -pinname A20   -fixed yes  -iostd LVCMOS33
+set_io PCI_CBE<3>         -pinname D13   -fixed yes  -iostd LVCMOS33
+set_io PCI_CLK2           -pinname R4    -fixed yes  -iostd LVCMOS33
+set_io PCI_DEVSEL         -pinname E11   -fixed yes  -iostd LVCMOS33    
+set_io PCI_FRAME          -pinname B13   -fixed yes  -iostd LVCMOS33    
+set_io PCI_GNT0           -pinname C7    -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_GPERR          -pinname E14   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_INTB           -pinname B22   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_IRDY           -pinname A13   -fixed yes  -iostd LVCMOS33    -OUT_DRIVE 24
+set_io PCI_PAR              -pinname D15   -fixed yes  -iostd LVCMOS33  -OUT_DRIVE 24
+set_io PCI_REQ0             -pinname B7    -fixed yes  -iostd LVCMOS33  -OUT_DRIVE 24
+set_io PCI_RST              -pinname B21   -fixed yes  -iostd LVCMOS33  
+set_io PCI_SERR             -pinname E13   -fixed yes  -iostd LVCMOS33  -OUT_DRIVE 24
+set_io PCI_STOP             -pinname C14   -fixed yes  -iostd LVCMOS33  -OUT_DRIVE 24
+set_io PCI_TRDY             -pinname C15   -fixed yes  -iostd LVCMOS33  -OUT_DRIVE 24
+set_io PD_CUR_SL<1>       -pinname V30   -fixed yes  -iostd LVCMOS33
+set_io PD_CUR_SL<2>       -pinname T30   -fixed yes  -iostd LVCMOS33
+set_io PD_CUR_SL<3>       -pinname U28   -fixed yes  -iostd LVCMOS33
+set_io PD_CUR_SL<4>       -pinname AA30  -fixed yes  -iostd LVCMOS33
+set_io PD_CUR_SL<5>       -pinname AA29  -fixed yes  -iostd LVCMOS33
+set_io PD_DRV_EN_FPGA_R   -pinname AG18  -fixed yes  -iostd LVCMOS33
+set_io PD_DRV_EN_JAW      -pinname Y28   -fixed yes  -iostd LVCMOS33
+set_io PD_EN_PWR_JAW      -pinname U30   -fixed yes  -iostd LVCMOS33
+set_io PD_EN_PWR_ROT      -pinname F14   -fixed yes  -iostd LVCMOS33
+set_io PD_ENABLE<1>       -pinname W28   -fixed yes  -iostd LVCMOS33
+set_io PD_ENABLE<2>       -pinname W29   -fixed yes  -iostd LVCMOS33
+set_io PD_ENABLE<3>       -pinname Y30   -fixed yes  -iostd LVCMOS33
+set_io PD_ENABLE<4>       -pinname Y29   -fixed yes  -iostd LVCMOS33
+set_io PD_ENABLE<5>       -pinname U29   -fixed yes  -iostd LVCMOS33
+set_io PD_ENABLE<6>       -pinname V29   -fixed yes  -iostd LVCMOS33
+set_io PD_ENABLE<7>       -pinname W30   -fixed yes  -iostd LVCMOS33
+set_io PD_FAULTB<1>       -pinname N28   -fixed yes  -iostd LVCMOS33
+set_io PD_FAULTB<2>       -pinname R30   -fixed yes  -iostd LVCMOS33
+set_io PD_FAULTB<3>       -pinname N30   -fixed yes  -iostd LVCMOS33
+set_io PD_FAULTB<4>       -pinname N29   -fixed yes  -iostd LVCMOS33
+set_io PD_FAULTB<5>       -pinname K28   -fixed yes  -iostd LVCMOS33
+set_io PD_FAULTB<6>       -pinname L28   -fixed yes  -iostd LVCMOS33
+set_io PD_FAULTB<7>       -pinname K30   -fixed yes  -iostd LVCMOS33
+set_io PD_OVER_CURR<1>    -pinname D28   -fixed yes  -iostd LVCMOS33
+set_io PD_OVER_CURR<2>    -pinname P28   -fixed yes  -iostd LVCMOS33
+set_io PD_OVER_CURR<3>    -pinname P30   -fixed yes  -iostd LVCMOS33
+set_io PD_OVER_CURR<4>    -pinname M30   -fixed yes  -iostd LVCMOS33
+set_io PD_OVER_CURR<5>    -pinname L30   -fixed yes  -iostd LVCMOS33
+set_io PD_OVER_CURR<6>    -pinname AC30  -fixed yes  -iostd LVCMOS33
+set_io PD_OVER_CURR<7>    -pinname AB29  -fixed yes  -iostd LVCMOS33
+set_io PD_PWM1<1>         -pinname E29   -fixed yes  -iostd LVCMOS33
+set_io PD_PWM1<2>         -pinname F30   -fixed yes  -iostd LVCMOS33
+set_io PD_PWM1<3>         -pinname H30   -fixed yes  -iostd LVCMOS33
+set_io PD_PWM2<1>         -pinname J28   -fixed yes  -iostd LVCMOS33
+set_io PD_PWM2<2>         -pinname G28   -fixed yes  -iostd LVCMOS33
+set_io PD_PWM2<3>         -pinname G29   -fixed yes  -iostd LVCMOS33
+set_io PD_PWM3<1>         -pinname AA28  -fixed yes  -iostd LVCMOS33
+set_io PD_PWM3<2>         -pinname H28   -fixed yes  -iostd LVCMOS33
+set_io PD_PWM3<3>         -pinname E16   -fixed yes  -iostd LVCMOS33
+set_io PD_PWM4<1>         -pinname E15   -fixed yes  -iostd LVCMOS33
+set_io PD_PWM4<2>         -pinname J29   -fixed yes  -iostd LVCMOS33
+set_io PD_PWM4<3>         -pinname J30   -fixed yes  -iostd LVCMOS33
+set_io PD_PWM5<1>         -pinname H29   -fixed yes  -iostd LVCMOS33
+set_io PD_PWM5<2>         -pinname D30   -fixed yes  -iostd LVCMOS33
+set_io PD_PWM5<3>         -pinname M28   -fixed yes  -iostd LVCMOS33
+set_io PD_PWM6<1>         -pinname M29   -fixed yes  -iostd LVCMOS33
+set_io PD_PWM6<2>         -pinname AC29  -fixed yes  -iostd LVCMOS33
+set_io PD_SHUNT_SENSE     -pinname L29   -fixed yes  -iostd LVCMOS33
+set_io PD_UVFLT           -pinname K29   -fixed yes  -iostd LVCMOS33
+set_io PEND_ACTIVE        -pinname AH9   -fixed yes  -iostd LVCMOS33
+set_io PEND_MOT_EN_CPLDB  -pinname AK11  -fixed yes  -iostd LVCMOS33
+set_io PEND_PWR_EN        -pinname AF25  -fixed yes  -iostd LVCMOS33
+set_io PEND_PWR_OKB       -pinname AJ20  -fixed yes  -iostd LVCMOS33
+set_io REFCLK             -pinname AD3   -fixed yes  -iostd LVCMOS33
+set_io RES_PWM<1>         -pinname T24   -fixed yes  -iostd LVCMOS33
+set_io RES_PWM<10>        -pinname L27   -fixed yes  -iostd LVCMOS33
+set_io RES_PWM<11>        -pinname H26   -fixed yes  -iostd LVCMOS33
+set_io RES_PWM<12>        -pinname J27   -fixed yes  -iostd LVCMOS33
+set_io RES_PWM<13>        -pinname H27   -fixed yes  -iostd LVCMOS33
+set_io RES_PWM<14>        -pinname L26   -fixed yes  -iostd LVCMOS33
+set_io RES_PWM<15>        -pinname N27   -fixed yes  -iostd LVCMOS33
+set_io RES_PWM<16>        -pinname K27   -fixed yes  -iostd LVCMOS33
+set_io RES_PWM<17>        -pinname E27   -fixed yes  -iostd LVCMOS33
+set_io RES_PWM<18>        -pinname F27   -fixed yes  -iostd LVCMOS33
+set_io RES_PWM<19>        -pinname J26   -fixed yes  -iostd LVCMOS33
+set_io RES_PWM<2>         -pinname U27   -fixed yes  -iostd LVCMOS33
+set_io RES_PWM<20>        -pinname F28   -fixed yes  -iostd LVCMOS33
+set_io RES_PWM<3>         -pinname K26   -fixed yes  -iostd LVCMOS33
+set_io RES_PWM<4>         -pinname M27   -fixed yes  -iostd LVCMOS33
+set_io RES_PWM<5>         -pinname T25   -fixed yes  -iostd LVCMOS33
+set_io RES_PWM<6>         -pinname U26   -fixed yes  -iostd LVCMOS33
+set_io RES_PWM<7>         -pinname G27   -fixed yes  -iostd LVCMOS33
+set_io RES_PWM<8>         -pinname N26   -fixed yes  -iostd LVCMOS33
+set_io RES_PWM<9>         -pinname M26   -fixed yes  -iostd LVCMOS33
+set_io RESET_N        -pinname P7    -fixed yes  -iostd LVCMOS33 -res_pull Up
+set_io RTCLK          -pinname AC3   -fixed yes  -iostd LVCMOS33
+set_io RX_LED1        -pinname R29   -fixed yes  -iostd LVCMOS33
+set_io RX_LED2        -pinname E10   -fixed yes  -iostd LVCMOS33
+set_io RXCMD<0>       -pinname J2    -fixed yes  -iostd LVCMOS33
+set_io RXCMD<1>       -pinname K2    -fixed yes  -iostd LVCMOS33
+set_io RXCMD<2>       -pinname H3    -fixed yes  -iostd LVCMOS33
+set_io RXCMD<3>       -pinname H4    -fixed yes  -iostd LVCMOS33
+set_io RXDATA<0>          -pinname P4    -fixed yes  -iostd LVCMOS33
+set_io RXDATA<1>          -pinname N3    -fixed yes  -iostd LVCMOS33
+set_io RXDATA<2>          -pinname M1    -fixed yes  -iostd LVCMOS33
+set_io RXDATA<3>          -pinname L3    -fixed yes  -iostd LVCMOS33
+set_io RXDATA<4>          -pinname T5    -fixed yes  -iostd LVCMOS33
+set_io RXDATA<5>          -pinname P5    -fixed yes  -iostd LVCMOS33
+set_io RXDATA<6>          -pinname H2    -fixed yes  -iostd LVCMOS33
+set_io RXDATA<7>          -pinname J3    -fixed yes  -iostd LVCMOS33
+set_io RXEMPTYB           -pinname L2    -fixed yes  -iostd LVCMOS33
+set_io RXENB              -pinname G3    -fixed yes  -iostd LVCMOS33
+set_io RXRSTB             -pinname H1    -fixed yes  -iostd LVCMOS33
+set_io RXSC               -pinname U3    -fixed yes  -iostd LVCMOS33
+set_io SP_LED<0>          -pinname D24   -fixed yes  -iostd LVCMOS33
+set_io SP_LED<1>          -pinname E23   -fixed yes  -iostd LVCMOS33
+set_io SP_LED<2>          -pinname C25   -fixed yes  -iostd LVCMOS33
+set_io SP_LED<3>          -pinname E25   -fixed yes  -iostd LVCMOS33
+set_io SP_LED<4>          -pinname D25   -fixed yes  -iostd LVCMOS33
+set_io SP_LED<5>          -pinname D26   -fixed yes  -iostd LVCMOS33
+set_io SP_LED<6>          -pinname C27   -fixed yes  -iostd LVCMOS33
+set_io SP_LED<7>          -pinname B28   -fixed yes  -iostd LVCMOS33
+set_io SP485_1_D          -pinname U2    -fixed yes  -iostd LVCMOS33
+set_io SP485_1_DIR        -pinname V1    -fixed yes  -iostd LVCMOS33
+set_io SP485_1_R          -pinname AE1   -fixed yes  -iostd LVCMOS33
+set_io SP485_2_D          -pinname T1    -fixed yes  -iostd LVCMOS33
+set_io SP485_2_DIR        -pinname U1    -fixed yes  -iostd LVCMOS33
+set_io SP485_2_R          -pinname P3    -fixed yes  -iostd LVCMOS33
+set_io SPENLP_CNTL        -pinname AA27  -fixed yes  -iostd LVCMOS33
+set_io SPENLP_STATE       -pinname Y26   -fixed yes  -iostd LVCMOS33
+set_io STAT_LED1          -pinname AF23  -fixed yes  -iostd LVCMOS33
+set_io STAT_LED2          -pinname AG20  -fixed yes  -iostd LVCMOS33
+set_io STAT_LED3          -pinname AK19  -fixed yes  -iostd LVCMOS33
+set_io SYNC           -pinname W1    -fixed yes  -iostd LVCMOS33
+set_io SYSCLK_IN      -pinname R27   -fixed yes  -iostd LVCMOS33
+set_io TCTX_IN        -pinname J4    -fixed yes  -iostd LVCMOS33
+set_io TP133          -pinname L4    -fixed yes  -iostd LVCMOS33
+set_io TP134          -pinname L5    -fixed yes  -iostd LVCMOS33
+set_io TP135          -pinname K1    -fixed yes  -iostd LVCMOS33
+set_io TP143          -pinname E6    -fixed yes  -iostd LVCMOS33
+set_io TP145          -pinname C6    -fixed yes  -iostd LVCMOS33
+set_io TP146          -pinname D7    -fixed yes  -iostd LVCMOS33
+set_io TP147          -pinname T28   -fixed yes  -iostd LVCMOS33
+set_io TP148          -pinname T27   -fixed yes  -iostd LVCMOS33
+set_io TP149          -pinname D8    -fixed yes  -iostd LVCMOS33
+set_io TP150          -pinname D9    -fixed yes  -iostd LVCMOS33
+set_io TP151          -pinname D16   -fixed yes  -iostd LVCMOS33
+set_io TP152          -pinname C17   -fixed yes  -iostd LVCMOS33
+set_io TP156          -pinname A27   -fixed yes  -iostd LVCMOS33
+set_io TST_SPI_CLK        -pinname AB28  -fixed yes  -iostd LVCMOS33
+set_io TST_SPI_CS         -pinname AH17  -fixed yes  -iostd LVCMOS33
+set_io TST_SPI_MISO       -pinname AH18  -fixed yes  -iostd LVCMOS33
+set_io TST_SPI_MOSI       -pinname AK18  -fixed yes  -iostd LVCMOS33
+set_io TX_LED1            -pinname D10   -fixed yes  -iostd LVCMOS33
+set_io TX_LED2            -pinname D11   -fixed yes  -iostd LVCMOS33
+set_io TXCMD<0>           -pinname D1    -fixed yes  -iostd LVCMOS33
+set_io TXCMD<1>           -pinname D3    -fixed yes  -iostd LVCMOS33
+set_io TXCMD<2>           -pinname B3    -fixed yes  -iostd LVCMOS33
+set_io TXCMD<3>           -pinname C4    -fixed yes  -iostd LVCMOS33
+set_io TXDATA<0>          -pinname G2    -fixed yes  -iostd LVCMOS33
+set_io TXDATA<1>          -pinname F1    -fixed yes  -iostd LVCMOS33
+set_io TXDATA<2>          -pinname E2    -fixed yes  -iostd LVCMOS33
+set_io TXDATA<3>          -pinname E4    -fixed yes  -iostd LVCMOS33
+set_io TXDATA<4>          -pinname B5    -fixed yes  -iostd LVCMOS33
+set_io TXDATA<5>          -pinname A4    -fixed yes  -iostd LVCMOS33
+set_io TXDATA<6>          -pinname D5    -fixed yes  -iostd LVCMOS33
+set_io TXDATA<7>          -pinname C2    -fixed yes  -iostd LVCMOS33
+set_io TXEMPTYB           -pinname L1    -fixed yes  -iostd LVCMOS33
+set_io TXENB              -pinname F3    -fixed yes  -iostd LVCMOS33
+set_io TXRSTB             -pinname F4    -fixed yes  -iostd LVCMOS33
+set_io TXSC               -pinname G4    -fixed yes  -iostd LVCMOS33
+set_io VLTN               -pinname U4    -fixed yes  -iostd LVCMOS33
+

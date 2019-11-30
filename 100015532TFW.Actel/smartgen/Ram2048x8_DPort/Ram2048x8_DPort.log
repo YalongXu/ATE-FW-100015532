@@ -1,0 +1,86 @@
+ ** Message System Log
+ ** Database: 
+ ** Date:   Thu Apr 28 09:07:34 2011
+
+
+****************
+Macro Parameters
+****************
+
+Name                            : Ram2048x8_DPort
+Family                          : ProASIC3E
+Output Format                   : VERILOG
+Type                            : RAM
+Write Enable                    : Active High
+Read Enable                     : Active High
+Reset                           : None
+LP                              : None
+FF                              : None
+Read Clock                      : Rising
+Write Clock                     : Rising
+Write Depth                     : 2048
+Write Width                     : 8
+Read Depth                      : 2048
+Read Width                      : 8
+RAM Type                        : Dual Port
+Clocks                          : Independent Read and Write Clocks
+Write Mode A                    : Hold Data
+Write Mode B                    : Hold Data
+Read Pipeline A                 : No
+Read Pipeline B                 : No
+Optimized for                   : Speed
+Portname DataIn                 :
+Portname DataOut                :
+Portname Write En               :
+Portname Read En                :
+Portname WClock                 :
+Portname RClock                 :
+Portname WAddress               :
+Portname RAddress               :
+Portname Reset                  :
+Portname Clock                  :
+Portname DataAIn                : DINA
+Portname DataBIn                : DINB
+Portname DataAOut               : DOUTA
+Portname DataBOut               : DOUTB
+Portname AddressA               : ADDRA
+Portname AddressB               : ADDRB
+Portname CLKA                   : CLKA
+Portname CLKB                   : CLKB
+Portname RWA                    : RWA
+Portname RWB                    : RWB
+Portname BLKA                   : BLKA
+Portname BLKB                   : BLKB
+Portname LP                     :
+Portname FF                     :
+Initialize RAM                  : False
+
+Cascade Configuration:
+     Port A configuration       : 2048x2
+     Port B configuration       : 2048x2
+     Number of blocks depth wise: 1
+     Number of blocks width wise: 4
+
+**************
+Compile Report
+**************
+
+
+Netlist Resource Report
+=======================
+
+    CORE                       Used:      2
+    IO (W/ clocks)             Used:      0
+    Differential IO            Used:      0
+    PLL                        Used:      0
+    RAM/FIFO                   Used:      4
+    Low Static ICC             Used:      0
+    FlashROM                   Used:      0
+    User JTAG                  Used:      0
+
+Wrote Verilog netlist to T:/Test
+Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/smartge\
+n\Ram2048x8_DPort\Ram2048x8_DPort.v.
+
+ ** Log Ended:   Thu Apr 28 09:07:35 2011
+

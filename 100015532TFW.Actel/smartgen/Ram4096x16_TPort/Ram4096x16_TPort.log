@@ -1,0 +1,86 @@
+ ** Message System Log
+ ** Database: 
+ ** Date:   Thu Apr 28 08:59:39 2011
+
+
+****************
+Macro Parameters
+****************
+
+Name                            : Ram4096x16_TPort
+Family                          : ProASIC3E
+Output Format                   : VERILOG
+Type                            : RAM
+Write Enable                    : Active High
+Read Enable                     : Active High
+Reset                           : None
+LP                              : None
+FF                              : None
+Read Clock                      : Rising
+Write Clock                     : Rising
+Write Depth                     : 4096
+Write Width                     : 16
+Read Depth                      : 4096
+Read Width                      : 16
+RAM Type                        : Two Port
+Clocks                          : Independent Read and Write Clocks
+Write Mode A                    : Hold Data
+Write Mode B                    : Hold Data
+Read Pipeline A                 : No
+Read Pipeline B                 : No
+Optimized for                   : Speed
+Portname DataIn                 : WD
+Portname DataOut                : RD
+Portname Write En               : WEN
+Portname Read En                : REN
+Portname WClock                 : WCLK
+Portname RClock                 : RCLK
+Portname WAddress               : WADDR
+Portname RAddress               : RADDR
+Portname Reset                  :
+Portname Clock                  :
+Portname DataAIn                :
+Portname DataBIn                :
+Portname DataAOut               :
+Portname DataBOut               :
+Portname AddressA               :
+Portname AddressB               :
+Portname CLKA                   :
+Portname CLKB                   :
+Portname RWA                    :
+Portname RWB                    :
+Portname BLKA                   :
+Portname BLKB                   :
+Portname LP                     :
+Portname FF                     :
+Initialize RAM                  : False
+
+Cascade Configuration:
+     Write Port configuration   : 4096x1
+     Read Port configuration    : 4096x1
+     Number of blocks depth wise: 1
+     Number of blocks width wise: 16
+
+**************
+Compile Report
+**************
+
+
+Netlist Resource Report
+=======================
+
+    CORE                       Used:      2
+    IO (W/ clocks)             Used:      0
+    Differential IO            Used:      0
+    PLL                        Used:      0
+    RAM/FIFO                   Used:     16
+    Low Static ICC             Used:      0
+    FlashROM                   Used:      0
+    User JTAG                  Used:      0
+
+Wrote Verilog netlist to T:/Test
+Working/KIK2-MSVisualStudio/VMS/100015532/Firmware/100015532TFW.Actel/smartge\
+n\Ram4096x16_TPort\Ram4096x16_TPort.v.
+
+ ** Log Ended:   Thu Apr 28 08:59:40 2011
+

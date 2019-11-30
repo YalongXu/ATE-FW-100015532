@@ -1,0 +1,1761 @@
+
+
+##### START OF TIMING REPORT #####[
+# Timing Report written on Wed May 11 15:17:00 2011
+#
+
+
+Top view:               top_100015532TFW
+Operating conditions:   PA3.COMWC-2
+Requested Frequency:    1.0 MHz
+Wire load mode:         top
+Wire load model:        proasic3e
+Paths requested:        5
+Constraint File(s):    T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\constraint\top_100015532TFW_synth.sdc
+                       
+@N: MT320 |This timing report estimates place and route data. Please look at the place and route timing report for final timing..
+
+
+Performance Summary 
+*******************
+
+
+Worst slack in design: 0.000
+
+                                                   Requested     Estimated     Requested     Estimated                 Clock        Clock              
+Starting Clock                                     Frequency     Frequency     Period        Period        Slack       Type         Group              
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ADC_AD7663AS_ad1_mod|ram_wr_clk_inferred_clock     40.0 MHz      NA            25.000        NA            NA          inferred     Inferred_clkgroup_6
+ADC_AD7663AS_ad2_mod|ram_wr_clk_inferred_clock     40.0 MHz      NA            25.000        NA            NA          inferred     Inferred_clkgroup_5
+PCI_CLK2                                           32.0 MHz      36.4 MHz      31.250        27.483        1.884       declared     default_clkgroup_2 
+SD_CLK16x                                          160.0 MHz     105.5 MHz     6.250         9.482         -3.232      declared     default_clkgroup_3 
+SYSCLK                                             40.0 MHz      50.5 MHz      25.000        19.804        2.696       declared     default_clkgroup_1 
+SYSCLK_IN                                          80.0 MHz      306.1 MHz     12.500        3.267         9.233       declared     default_clkgroup_0 
+aqclk                                              1.0 MHz       537.7 MHz     1000.000      1.860         998.140     declared     default_clkgroup_5 
+md|clk1x_enable_inferred_clock                     40.0 MHz      NA            25.000        NA            NA          inferred     Inferred_clkgroup_4
+md|clkdiv_inferred_clock[3]                        40.0 MHz      275.6 MHz     25.000        3.629         21.371      inferred     Inferred_clkgroup_3
+me|clkdiv_inferred_clock[3]                        40.0 MHz      166.5 MHz     25.000        6.005         18.994      inferred     Inferred_clkgroup_2
+pci_16kHz                                          1.0 MHz       1.0 MHz       1000.000      990.853       9.147       declared     default_clkgroup_4 
+pci_clk_div                                        1.0 MHz       95.5 MHz      1000.000      10.467        494.767     declared     default_clkgroup_7 
+sclk                                               20.0 MHz      67.4 MHz      50.000        14.830        18.161      declared     default_clkgroup_6 
+stat_led2_clk                                      1.0 MHz       102.3 MHz     1000.000      9.776         495.112     declared     default_clkgroup_8 
+stat_led2_clk_pre                                  1.0 MHz       102.3 MHz     1000.000      9.776         495.112     declared     default_clkgroup_9 
+System                                             40.0 MHz      44.0 MHz      25.000        22.715        2.285       system       system_clkgroup    
+=======================================================================================================================================================
+
+
+
+Clock Relationships
+*******************
+
+Clocks                                                                          |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Starting                        Ending                                          |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+System                          System                                          |  0.000       3.003  |  No paths    -      |  No paths    -      |  No paths    -    
+System                          SYSCLK                                          |  0.000       False  |  No paths    -      |  0.000       False  |  No paths    -    
+System                          PCI_CLK2                                        |  0.000       False  |  No paths    -      |  0.000       False  |  No paths    -    
+System                          SD_CLK16x                                       |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+System                          sclk                                            |  No paths    -      |  No paths    -      |  0.000       False  |  No paths    -    
+System                          pci_clk_div                                     |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+SYSCLK_IN                       System                                          |  0.000       2.859  |  No paths    -      |  No paths    -      |  No paths    -    
+SYSCLK_IN                       SYSCLK_IN                                       |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+SYSCLK                          System                                          |  0.000       0.000  |  No paths    -      |  No paths    -      |  0.000       2.559
+SYSCLK                          SYSCLK                                          |  0.000       False  |  0.000       False  |  12.500      False  |  12.500      False
+SYSCLK                          PCI_CLK2                                        |  No paths    -      |  Diff grp    -      |  No paths    -      |  No paths    -    
+SYSCLK                          aqclk                                           |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+SYSCLK                          sclk                                            |  No paths    -      |  Diff grp    -      |  Diff grp    -      |  Diff grp    -    
+SYSCLK                          pci_clk_div                                     |  Diff grp    -      |  Diff grp    -      |  Diff grp    -      |  Diff grp    -    
+SYSCLK                          ADC_AD7663AS_ad2_mod|ram_wr_clk_inferred_clock  |  No paths    -      |  No paths    -      |  No paths    -      |  Diff grp    -    
+SYSCLK                          ADC_AD7663AS_ad1_mod|ram_wr_clk_inferred_clock  |  No paths    -      |  No paths    -      |  No paths    -      |  Diff grp    -    
+PCI_CLK2                        System                                          |  0.000       0.000  |  No paths    -      |  No paths    -      |  0.000       2.559
+PCI_CLK2                        SYSCLK                                          |  Diff grp    -      |  Diff grp    -      |  No paths    -      |  Diff grp    -    
+PCI_CLK2                        PCI_CLK2                                        |  0.000       False  |  0.000       False  |  No paths    -      |  15.625      False
+PCI_CLK2                        SD_CLK16x                                       |  No paths    -      |  Diff grp    -      |  No paths    -      |  No paths    -    
+PCI_CLK2                        pci_16kHz                                       |  No paths    -      |  Diff grp    -      |  No paths    -      |  No paths    -    
+PCI_CLK2                        sclk                                            |  No paths    -      |  Diff grp    -      |  No paths    -      |  Diff grp    -    
+PCI_CLK2                        pci_clk_div                                     |  No paths    -      |  Diff grp    -      |  No paths    -      |  Diff grp    -    
+PCI_CLK2                        stat_led2_clk_pre                               |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+PCI_CLK2                        ADC_AD7663AS_ad2_mod|ram_wr_clk_inferred_clock  |  No paths    -      |  No paths    -      |  No paths    -      |  Diff grp    -    
+PCI_CLK2                        ADC_AD7663AS_ad1_mod|ram_wr_clk_inferred_clock  |  No paths    -      |  No paths    -      |  No paths    -      |  Diff grp    -    
+SD_CLK16x                       System                                          |  0.000       3.299  |  No paths    -      |  No paths    -      |  0.000       6.524
+SD_CLK16x                       PCI_CLK2                                        |  No paths    -      |  Diff grp    -      |  No paths    -      |  No paths    -    
+SD_CLK16x                       SD_CLK16x                                       |  0.000       False  |  0.000       False  |  3.125       False  |  3.125       False
+SD_CLK16x                       me|clkdiv_inferred_clock[3]                     |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+SD_CLK16x                       md|clkdiv_inferred_clock[3]                     |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+SD_CLK16x                       md|clk1x_enable_inferred_clock                  |  No paths    -      |  Diff grp    -      |  No paths    -      |  No paths    -    
+pci_16kHz                       System                                          |  No paths    -      |  No paths    -      |  No paths    -      |  0.000       9.147
+pci_16kHz                       SYSCLK                                          |  No paths    -      |  No paths    -      |  No paths    -      |  Diff grp    -    
+pci_16kHz                       PCI_CLK2                                        |  No paths    -      |  Diff grp    -      |  No paths    -      |  No paths    -    
+aqclk                           System                                          |  0.000       0.000  |  No paths    -      |  No paths    -      |  No paths    -    
+aqclk                           SYSCLK                                          |  Diff grp    -      |  No paths    -      |  Diff grp    -      |  No paths    -    
+aqclk                           aqclk                                           |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+aqclk                           sclk                                            |  No paths    -      |  No paths    -      |  Diff grp    -      |  No paths    -    
+sclk                            System                                          |  0.000       0.000  |  No paths    -      |  No paths    -      |  0.000       2.559
+sclk                            SYSCLK                                          |  No paths    -      |  Diff grp    -      |  Diff grp    -      |  Diff grp    -    
+sclk                            PCI_CLK2                                        |  No paths    -      |  Diff grp    -      |  No paths    -      |  No paths    -    
+sclk                            sclk                                            |  No paths    -      |  0.000       False  |  25.000      False  |  25.000      False
+sclk                            ADC_AD7663AS_ad2_mod|ram_wr_clk_inferred_clock  |  No paths    -      |  No paths    -      |  No paths    -      |  Diff grp    -    
+sclk                            ADC_AD7663AS_ad1_mod|ram_wr_clk_inferred_clock  |  No paths    -      |  No paths    -      |  No paths    -      |  Diff grp    -    
+pci_clk_div                     System                                          |  0.000       4.889  |  No paths    -      |  No paths    -      |  0.000       2.593
+pci_clk_div                     SYSCLK                                          |  Diff grp    -      |  Diff grp    -      |  Diff grp    -      |  Diff grp    -    
+pci_clk_div                     pci_clk_div                                     |  0.000       False  |  0.000       False  |  500.000     False  |  500.000     False
+stat_led2_clk                   System                                          |  0.000       0.000  |  No paths    -      |  No paths    -      |  No paths    -    
+stat_led2_clk                   stat_led2_clk                                   |  0.000       False  |  0.000       False  |  500.000     False  |  500.000     False
+stat_led2_clk                   stat_led2_clk_pre                               |  Diff grp    -      |  Diff grp    -      |  Diff grp    -      |  Diff grp    -    
+stat_led2_clk_pre               System                                          |  0.000       0.000  |  No paths    -      |  No paths    -      |  No paths    -    
+stat_led2_clk_pre               stat_led2_clk                                   |  Diff grp    -      |  Diff grp    -      |  Diff grp    -      |  Diff grp    -    
+stat_led2_clk_pre               stat_led2_clk_pre                               |  0.000       False  |  0.000       False  |  500.000     False  |  500.000     False
+me|clkdiv_inferred_clock[3]     System                                          |  0.000       3.132  |  No paths    -      |  No paths    -      |  No paths    -    
+me|clkdiv_inferred_clock[3]     SD_CLK16x                                       |  Diff grp    -      |  No paths    -      |  No paths    -      |  No paths    -    
+me|clkdiv_inferred_clock[3]     me|clkdiv_inferred_clock[3]                     |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+md|clkdiv_inferred_clock[3]     SD_CLK16x                                       |  Diff grp    -      |  No paths    -      |  Diff grp    -      |  No paths    -    
+md|clkdiv_inferred_clock[3]     md|clkdiv_inferred_clock[3]                     |  0.000       False  |  No paths    -      |  No paths    -      |  No paths    -    
+md|clk1x_enable_inferred_clock  SD_CLK16x                                       |  No paths    -      |  Diff grp    -      |  No paths    -      |  No paths    -    
+======================================================================================================================================================================
+ Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
+       'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
+
+
+
+Interface Information 
+*********************
+
+
+
+Input Ports: 
+
+Port                  Starting            User           Arrival     Required          
+Name                  Reference           Constraint     Time        Time         Slack
+                      Clock                                                            
+---------------------------------------------------------------------------------------
+ACC_HW_RESETb         NA                  NA             NA          NA           NA   
+ACC_HW_STATUSb        NA                  NA             NA          NA           NA   
+ACC_TG_COLL           NA                  NA             NA          NA           NA   
+AD_BUSY1              NA                  NA             NA          NA           NA   
+AD_BUSY2              NA                  NA             NA          NA           NA   
+AD_SDOUT1             NA                  NA             NA          NA           NA   
+AD_SDOUT2             NA                  NA             NA          NA           NA   
+AMTX_IN               NA                  NA             NA          NA           NA   
+BMPLS                 NA                  NA             NA          NA           NA   
+CAN_AD[0]             System (rising)     NA             0.000       -9.051            
+CAN_AD[1]             System (rising)     NA             0.000       -10.600           
+CAN_AD[2]             System (rising)     NA             0.000       -10.174           
+CAN_AD[3]             System (rising)     NA             0.000       -8.700            
+CAN_AD[4]             System (rising)     NA             0.000       -11.347           
+CAN_AD[5]             System (rising)     NA             0.000       -10.747           
+CAN_AD[6]             System (rising)     NA             0.000       -11.838           
+CAN_AD[7]             System (rising)     NA             0.000       -10.469           
+CAN_INT1              NA                  NA             NA          NA           NA   
+CAN_INT2              NA                  NA             NA          NA           NA   
+CAN_RX                System (rising)     NA             0.000       -3.075            
+CAN_TX                System (rising)     NA             0.000       -3.075            
+CNTL_FPGA3            NA                  NA             NA          NA           NA   
+CNTL_FPGA4            NA                  NA             NA          NA           NA   
+CNTL_FPGA5            NA                  NA             NA          NA           NA   
+COLLISION_IN          NA                  NA             NA          NA           NA   
+COLL_DETECT           NA                  NA             NA          NA           NA   
+COLL_DETECTb          NA                  NA             NA          NA           NA   
+COLL_SP1_IN           NA                  NA             NA          NA           NA   
+COLL_SP2_IN           NA                  NA             NA          NA           NA   
+CPLD_VERSION[0]       System (rising)     NA             0.000       -8.669            
+CPLD_VERSION[1]       System (rising)     NA             0.000       -8.751            
+CPLD_VERSION[2]       System (rising)     NA             0.000       -8.166            
+CPLD_VERSION[3]       System (rising)     NA             0.000       -8.409            
+CPLD_VERSION[4]       System (rising)     NA             0.000       -6.972            
+CPLD_VERSION[5]       System (rising)     NA             0.000       -7.351            
+CPLD_VERSION[6]       System (rising)     NA             0.000       -7.458            
+CPLD_VERSION[7]       System (rising)     NA             0.000       -6.272            
+EATX_IN               NA                  NA             NA          NA           NA   
+FPGA2CPLD_CLK         System (rising)     NA             0.000       -8.108            
+HW_REV[0]             NA                  NA             NA          NA           NA   
+HW_REV[1]             NA                  NA             NA          NA           NA   
+HW_REV[2]             NA                  NA             NA          NA           NA   
+IMTX_IN               NA                  NA             NA          NA           NA   
+KVBENLP_STATE         NA                  NA             NA          NA           NA   
+LFI1b                 NA                  NA             NA          NA           NA   
+LFI2b                 NA                  NA             NA          NA           NA   
+MEL_BUS[1]            System (rising)     NA             0.000       -8.146            
+MEL_BUS[2]            System (rising)     NA             0.000       -8.227            
+MEL_BUS[3]            System (rising)     NA             0.000       -8.225            
+MEL_BUS[4]            System (rising)     NA             0.000       -7.886            
+MEL_ENABLE            System (rising)     NA             0.000       -3.790            
+MEL_ERROR             System (rising)     NA             0.000       -3.719            
+MEL_INT               System (rising)     NA             0.000       -3.974            
+MEL_XTRA[1]           System (rising)     NA             0.000       -8.247            
+MEL_XTRA[2]           System (rising)     NA             0.000       -8.888            
+MEL_XTRA[3]           System (rising)     NA             0.000       -8.895            
+P24V_PGOODb           NA                  NA             NA          NA           NA   
+P28V_PGOOD_JAWb       NA                  NA             NA          NA           NA   
+P28V_PGOOD_ROTb       NA                  NA             NA          NA           NA   
+PCAN_RX               NA                  NA             NA          NA           NA   
+PCAN_TX               NA                  NA             NA          NA           NA   
+PCI_AD[0]             NA                  NA             NA          NA           NA   
+PCI_AD[1]             NA                  NA             NA          NA           NA   
+PCI_AD[2]             NA                  NA             NA          NA           NA   
+PCI_AD[3]             NA                  NA             NA          NA           NA   
+PCI_AD[4]             NA                  NA             NA          NA           NA   
+PCI_AD[5]             NA                  NA             NA          NA           NA   
+PCI_AD[6]             NA                  NA             NA          NA           NA   
+PCI_AD[7]             NA                  NA             NA          NA           NA   
+PCI_AD[8]             NA                  NA             NA          NA           NA   
+PCI_AD[9]             NA                  NA             NA          NA           NA   
+PCI_AD[10]            NA                  NA             NA          NA           NA   
+PCI_AD[11]            NA                  NA             NA          NA           NA   
+PCI_AD[12]            NA                  NA             NA          NA           NA   
+PCI_AD[13]            NA                  NA             NA          NA           NA   
+PCI_AD[14]            NA                  NA             NA          NA           NA   
+PCI_AD[15]            NA                  NA             NA          NA           NA   
+PCI_AD[16]            NA                  NA             NA          NA           NA   
+PCI_AD[17]            NA                  NA             NA          NA           NA   
+PCI_AD[18]            NA                  NA             NA          NA           NA   
+PCI_AD[19]            NA                  NA             NA          NA           NA   
+PCI_AD[20]            NA                  NA             NA          NA           NA   
+PCI_AD[21]            NA                  NA             NA          NA           NA   
+PCI_AD[22]            NA                  NA             NA          NA           NA   
+PCI_AD[23]            NA                  NA             NA          NA           NA   
+PCI_AD[24]            NA                  NA             NA          NA           NA   
+PCI_AD[25]            NA                  NA             NA          NA           NA   
+PCI_AD[26]            NA                  NA             NA          NA           NA   
+PCI_AD[27]            NA                  NA             NA          NA           NA   
+PCI_AD[28]            NA                  NA             NA          NA           NA   
+PCI_AD[29]            NA                  NA             NA          NA           NA   
+PCI_AD[30]            NA                  NA             NA          NA           NA   
+PCI_AD[31]            NA                  NA             NA          NA           NA   
+PCI_CBE[0]            NA                  NA             NA          NA           NA   
+PCI_CBE[1]            NA                  NA             NA          NA           NA   
+PCI_CBE[2]            NA                  NA             NA          NA           NA   
+PCI_CBE[3]            NA                  NA             NA          NA           NA   
+PCI_CLK2              System (rising)     NA             0.000       -3.094            
+PCI_DEVSEL            System (rising)     NA             0.000       -6.917            
+PCI_FRAME             System (rising)     NA             0.000       -7.937            
+PCI_GNT0              System (rising)     NA             0.000       -5.000            
+PCI_GPERR             System (rising)     NA             0.000       -5.000            
+PCI_INTB              System (rising)     NA             0.000       -5.000            
+PCI_IRDY              System (rising)     NA             0.000       -5.000            
+PCI_PAR               System (rising)     NA             0.000       -5.000            
+PCI_REQ0              System (rising)     NA             0.000       -5.000            
+PCI_RST               System (rising)     NA             0.000       -8.477            
+PCI_SERR              System (rising)     NA             0.000       -5.000            
+PCI_STOP              System (rising)     NA             0.000       -5.000            
+PCI_TRDY              System (rising)     NA             0.000       -5.000            
+PD_FAULTb[1]          NA                  NA             NA          NA           NA   
+PD_FAULTb[2]          NA                  NA             NA          NA           NA   
+PD_FAULTb[3]          NA                  NA             NA          NA           NA   
+PD_FAULTb[4]          NA                  NA             NA          NA           NA   
+PD_FAULTb[5]          NA                  NA             NA          NA           NA   
+PD_FAULTb[6]          NA                  NA             NA          NA           NA   
+PD_FAULTb[7]          NA                  NA             NA          NA           NA   
+PD_OVER_CURR[1]       NA                  NA             NA          NA           NA   
+PD_OVER_CURR[2]       NA                  NA             NA          NA           NA   
+PD_OVER_CURR[3]       NA                  NA             NA          NA           NA   
+PD_OVER_CURR[4]       NA                  NA             NA          NA           NA   
+PD_OVER_CURR[5]       NA                  NA             NA          NA           NA   
+PD_OVER_CURR[6]       NA                  NA             NA          NA           NA   
+PD_OVER_CURR[7]       NA                  NA             NA          NA           NA   
+PD_SHUNT_SENSE        NA                  NA             NA          NA           NA   
+PD_UVFLT              NA                  NA             NA          NA           NA   
+PEND_ACTIVE           NA                  NA             NA          NA           NA   
+PEND_MOT_EN_CPLDb     NA                  NA             NA          NA           NA   
+PEND_PWR_OKb          NA                  NA             NA          NA           NA   
+P_OVLb                NA                  NA             NA          NA           NA   
+P_SWb[0]              NA                  NA             NA          NA           NA   
+P_SWb[1]              NA                  NA             NA          NA           NA   
+P_SWb[2]              NA                  NA             NA          NA           NA   
+P_SWb[3]              NA                  NA             NA          NA           NA   
+P_SWb[4]              NA                  NA             NA          NA           NA   
+P_SWb[5]              NA                  NA             NA          NA           NA   
+P_SWb[6]              NA                  NA             NA          NA           NA   
+P_SWb[7]              NA                  NA             NA          NA           NA   
+P_SWb[8]              NA                  NA             NA          NA           NA   
+P_SWb[9]              NA                  NA             NA          NA           NA   
+P_SWb[10]             NA                  NA             NA          NA           NA   
+P_SWb[11]             NA                  NA             NA          NA           NA   
+RESET_N               System (rising)     NA             0.000       -3.123            
+RXCMD[0]              NA                  NA             NA          NA           NA   
+RXCMD[1]              NA                  NA             NA          NA           NA   
+RXCMD[2]              NA                  NA             NA          NA           NA   
+RXCMD[3]              NA                  NA             NA          NA           NA   
+RXDATA[0]             NA                  NA             NA          NA           NA   
+RXDATA[1]             NA                  NA             NA          NA           NA   
+RXDATA[2]             NA                  NA             NA          NA           NA   
+RXDATA[3]             NA                  NA             NA          NA           NA   
+RXDATA[4]             NA                  NA             NA          NA           NA   
+RXDATA[5]             NA                  NA             NA          NA           NA   
+RXDATA[6]             NA                  NA             NA          NA           NA   
+RXDATA[7]             NA                  NA             NA          NA           NA   
+RXEMPTYb              NA                  NA             NA          NA           NA   
+RXSC                  NA                  NA             NA          NA           NA   
+SPENLP_STATE          NA                  NA             NA          NA           NA   
+SYNC                  NA                  NA             NA          NA           NA   
+SYSCLK_IN             NA                  NA             NA          NA           NA   
+Sp485_1_R             NA                  NA             NA          NA           NA   
+Sp485_2_R             NA                  NA             NA          NA           NA   
+TCTX_IN               NA                  NA             NA          NA           NA   
+TST_SPI_MISO          NA                  NA             NA          NA           NA   
+TXEMPTYb              NA                  NA             NA          NA           NA   
+VLTN                  NA                  NA             NA          NA           NA   
+=======================================================================================
+
+
+Output Ports: 
+
+Port                 Starting                                 User           Arrival     Required          
+Name                 Reference                                Constraint     Time        Time         Slack
+                     Clock                                                                                 
+-----------------------------------------------------------------------------------------------------------
+ACC_LEDGRN           PCI_CLK2 (falling)                       NA             2.592       0.000             
+ACC_LEDRED           PCI_CLK2 (falling)                       NA             2.592       0.000             
+ACC_LED_PWR_EN       PCI_CLK2 (falling)                       NA             2.592       0.000             
+ACC_RST_LMP_CNTL     PCI_CLK2 (falling)                       NA             2.592       0.000             
+AD1_CNVSTb           SYSCLK (falling)                         NA             2.559       0.000             
+AD1_SCLK             NA                                       NA             NA          NA           NA   
+AD2_CNVSTb           SYSCLK (falling)                         NA             2.559       0.000             
+AD2_SCLK             NA                                       NA             NA          NA           NA   
+AD_SEL[0]            PCI_CLK2 (falling)                       NA             2.592       0.000             
+AD_SEL[1]            PCI_CLK2 (falling)                       NA             2.592       0.000             
+AD_SEL[2]            PCI_CLK2 (falling)                       NA             2.592       0.000             
+AD_SEL[3]            PCI_CLK2 (falling)                       NA             2.592       0.000             
+AD_SEL[4]            PCI_CLK2 (falling)                       NA             2.592       0.000             
+AD_SEL[5]            PCI_CLK2 (falling)                       NA             2.592       0.000             
+AD_SEL[6]            PCI_CLK2 (falling)                       NA             2.592       0.000             
+CAN_AD[0]            PCI_CLK2 (falling)                       NA             3.066       0.000             
+CAN_AD[1]            PCI_CLK2 (falling)                       NA             3.066       0.000             
+CAN_AD[2]            PCI_CLK2 (falling)                       NA             3.066       0.000             
+CAN_AD[3]            PCI_CLK2 (falling)                       NA             3.066       0.000             
+CAN_AD[4]            PCI_CLK2 (falling)                       NA             3.066       0.000             
+CAN_AD[5]            PCI_CLK2 (falling)                       NA             3.066       0.000             
+CAN_AD[6]            PCI_CLK2 (falling)                       NA             3.066       0.000             
+CAN_AD[7]            PCI_CLK2 (falling)                       NA             3.066       0.000             
+CAN_ALE              PCI_CLK2 (rising)                        NA             3.672       0.000             
+CAN_BUF_DIR1         PCI_CLK2 (rising)                        NA             3.520       0.000             
+CAN_CCLK             NA                                       NA             NA          NA           NA   
+CAN_CS1              PCI_CLK2 (falling)                       NA             4.309       0.000             
+CAN_CS2              PCI_CLK2 (falling)                       NA             4.400       0.000             
+CAN_RD               PCI_CLK2 (rising)                        NA             5.135       0.000             
+CAN_RST              PCI_CLK2 (falling)                       NA             2.592       0.000             
+CAN_WR               PCI_CLK2 (falling)                       NA             4.962       0.000             
+CE1b                 SYSCLK (falling)                         NA             3.214       0.000             
+CE2b                 SYSCLK (falling)                         NA             3.177       0.000             
+CNTL_FPGA0           PCI_CLK2 (falling)                       NA             2.592       0.000             
+CNTL_FPGA1           PCI_CLK2 (falling)                       NA             2.592       0.000             
+CNTL_FPGA2           PCI_CLK2 (falling)                       NA             2.592       0.000             
+COLLISION_OUT        me|clkdiv_inferred_clock[3] (rising)     NA             3.132       0.000             
+COLLISION_PWR_EN     PCI_CLK2 (falling)                       NA             2.592       0.000             
+COLL_CLK_OUT         SYSCLK (falling)                         NA             2.592       0.000             
+COLL_CS_OUTb         SYSCLK (falling)                         NA             2.592       0.000             
+EN_12Vb              PCI_CLK2 (falling)                       NA             2.592       0.000             
+FPGA_DONE            System (rising)                          NA             3.037       0.000             
+HEARTBEAT            NA                                       NA             NA          NA           NA   
+ILIM_DAC_CLK         NA                                       NA             NA          NA           NA   
+ILIM_DAC_CS          SYSCLK (rising)                          NA             2.599       0.000             
+ILIM_DAC_SDI         SYSCLK (rising)                          NA             2.633       0.000             
+KVBENLP_CNTL         PCI_CLK2 (falling)                       NA             2.592       0.000             
+LP_MUX_EN            PCI_CLK2 (falling)                       NA             2.592       0.000             
+LP_MUX_S[0]          PCI_CLK2 (falling)                       NA             2.592       0.000             
+LP_MUX_S[1]          PCI_CLK2 (falling)                       NA             2.592       0.000             
+LP_MUX_S[2]          PCI_CLK2 (falling)                       NA             2.592       0.000             
+MEL_ACK              SYSCLK (falling)                         NA             2.592       0.000             
+MEL_ERROR_RESET      SYSCLK (falling)                         NA             2.559       0.000             
+PCI_AD[0]            PCI_CLK2 (falling)                       NA             4.379       0.000             
+PCI_AD[1]            PCI_CLK2 (falling)                       NA             4.379       0.000             
+PCI_AD[2]            PCI_CLK2 (falling)                       NA             4.379       0.000             
+PCI_AD[3]            PCI_CLK2 (falling)                       NA             4.379       0.000             
+PCI_AD[4]            PCI_CLK2 (falling)                       NA             4.379       0.000             
+PCI_AD[5]            PCI_CLK2 (falling)                       NA             4.379       0.000             
+PCI_AD[6]            PCI_CLK2 (falling)                       NA             4.379       0.000             
+PCI_AD[7]            PCI_CLK2 (falling)                       NA             4.379       0.000             
+PCI_AD[8]            PCI_CLK2 (falling)                       NA             4.379       0.000             
+PCI_AD[9]            PCI_CLK2 (falling)                       NA             3.732       0.000             
+PCI_AD[10]           PCI_CLK2 (falling)                       NA             3.077       0.000             
+PCI_AD[11]           PCI_CLK2 (falling)                       NA             3.077       0.000             
+PCI_AD[12]           PCI_CLK2 (falling)                       NA             3.732       0.000             
+PCI_AD[13]           PCI_CLK2 (falling)                       NA             3.732       0.000             
+PCI_AD[14]           PCI_CLK2 (falling)                       NA             3.077       0.000             
+PCI_AD[15]           PCI_CLK2 (falling)                       NA             3.732       0.000             
+PCI_AD[16]           PCI_CLK2 (falling)                       NA             3.732       0.000             
+PCI_AD[17]           PCI_CLK2 (falling)                       NA             3.732       0.000             
+PCI_AD[18]           PCI_CLK2 (falling)                       NA             3.077       0.000             
+PCI_AD[19]           PCI_CLK2 (falling)                       NA             3.732       0.000             
+PCI_AD[20]           PCI_CLK2 (falling)                       NA             3.732       0.000             
+PCI_AD[21]           PCI_CLK2 (falling)                       NA             3.732       0.000             
+PCI_AD[22]           PCI_CLK2 (falling)                       NA             3.732       0.000             
+PCI_AD[23]           PCI_CLK2 (falling)                       NA             3.732       0.000             
+PCI_AD[24]           PCI_CLK2 (falling)                       NA             3.077       0.000             
+PCI_AD[25]           PCI_CLK2 (falling)                       NA             3.732       0.000             
+PCI_AD[26]           PCI_CLK2 (falling)                       NA             3.732       0.000             
+PCI_AD[27]           PCI_CLK2 (falling)                       NA             3.077       0.000             
+PCI_AD[28]           PCI_CLK2 (falling)                       NA             3.732       0.000             
+PCI_AD[29]           PCI_CLK2 (falling)                       NA             3.732       0.000             
+PCI_AD[30]           PCI_CLK2 (falling)                       NA             3.077       0.000             
+PCI_AD[31]           PCI_CLK2 (falling)                       NA             3.732       0.000             
+PCI_GNT0             PCI_CLK2 (falling)                       NA             2.559       0.000             
+PCI_GPERR            PCI_CLK2 (falling)                       NA             2.559       0.000             
+PCI_INTB             PCI_CLK2 (falling)                       NA             2.559       0.000             
+PCI_IRDY             PCI_CLK2 (falling)                       NA             2.559       0.000             
+PCI_PAR              PCI_CLK2 (falling)                       NA             2.559       0.000             
+PCI_REQ0             PCI_CLK2 (falling)                       NA             2.559       0.000             
+PCI_SERR             PCI_CLK2 (falling)                       NA             2.559       0.000             
+PCI_STOP             PCI_CLK2 (falling)                       NA             2.559       0.000             
+PCI_TRDY             PCI_CLK2 (falling)                       NA             2.559       0.000             
+PD_CUR_SL[1]         SYSCLK (rising)                          NA             2.599       0.000             
+PD_CUR_SL[2]         SYSCLK (rising)                          NA             2.599       0.000             
+PD_CUR_SL[3]         SYSCLK (rising)                          NA             2.599       0.000             
+PD_CUR_SL[4]         SYSCLK (rising)                          NA             2.599       0.000             
+PD_CUR_SL[5]         SYSCLK (rising)                          NA             2.599       0.000             
+PD_DRV_EN_FPGA_R     PCI_CLK2 (falling)                       NA             2.592       0.000             
+PD_DRV_EN_JAW        PCI_CLK2 (falling)                       NA             2.592       0.000             
+PD_ENABLE[1]         PCI_CLK2 (falling)                       NA             2.592       0.000             
+PD_ENABLE[2]         PCI_CLK2 (falling)                       NA             2.592       0.000             
+PD_ENABLE[3]         PCI_CLK2 (falling)                       NA             2.592       0.000             
+PD_ENABLE[4]         PCI_CLK2 (falling)                       NA             2.592       0.000             
+PD_ENABLE[5]         PCI_CLK2 (falling)                       NA             2.592       0.000             
+PD_ENABLE[6]         PCI_CLK2 (falling)                       NA             2.592       0.000             
+PD_ENABLE[7]         PCI_CLK2 (falling)                       NA             2.592       0.000             
+PD_EN_PWR_JAW        PCI_CLK2 (falling)                       NA             2.592       0.000             
+PD_EN_PWR_ROT        PCI_CLK2 (falling)                       NA             2.592       0.000             
+PD_PWM1[1]           SYSCLK (rising)                          NA             3.467       0.000             
+PD_PWM1[2]           SYSCLK (rising)                          NA             3.467       0.000             
+PD_PWM1[3]           SYSCLK (rising)                          NA             3.467       0.000             
+PD_PWM2[1]           SYSCLK (rising)                          NA             3.467       0.000             
+PD_PWM2[2]           SYSCLK (rising)                          NA             3.467       0.000             
+PD_PWM2[3]           SYSCLK (rising)                          NA             3.467       0.000             
+PD_PWM3[1]           SYSCLK (rising)                          NA             3.467       0.000             
+PD_PWM3[2]           SYSCLK (rising)                          NA             3.467       0.000             
+PD_PWM3[3]           SYSCLK (rising)                          NA             3.467       0.000             
+PD_PWM4[1]           SYSCLK (rising)                          NA             3.467       0.000             
+PD_PWM4[2]           SYSCLK (rising)                          NA             3.467       0.000             
+PD_PWM4[3]           SYSCLK (rising)                          NA             3.467       0.000             
+PD_PWM5[1]           SYSCLK (rising)                          NA             3.467       0.000             
+PD_PWM5[2]           SYSCLK (rising)                          NA             3.467       0.000             
+PD_PWM5[3]           SYSCLK (rising)                          NA             3.467       0.000             
+PD_PWM6[1]           PCI_CLK2 (falling)                       NA             3.125       0.000             
+PD_PWM6[2]           PCI_CLK2 (falling)                       NA             3.125       0.000             
+PEND_PWR_EN          PCI_CLK2 (falling)                       NA             2.592       0.000             
+REFCLK               SYSCLK (falling)                         NA             3.688       0.000             
+RES_PWM[1]           NA                                       NA             NA          NA           NA   
+RES_PWM[2]           NA                                       NA             NA          NA           NA   
+RES_PWM[3]           NA                                       NA             NA          NA           NA   
+RES_PWM[4]           NA                                       NA             NA          NA           NA   
+RES_PWM[5]           NA                                       NA             NA          NA           NA   
+RES_PWM[6]           NA                                       NA             NA          NA           NA   
+RES_PWM[7]           NA                                       NA             NA          NA           NA   
+RES_PWM[8]           NA                                       NA             NA          NA           NA   
+RES_PWM[9]           NA                                       NA             NA          NA           NA   
+RES_PWM[10]          NA                                       NA             NA          NA           NA   
+RES_PWM[11]          NA                                       NA             NA          NA           NA   
+RES_PWM[12]          NA                                       NA             NA          NA           NA   
+RES_PWM[13]          NA                                       NA             NA          NA           NA   
+RES_PWM[14]          NA                                       NA             NA          NA           NA   
+RES_PWM[15]          NA                                       NA             NA          NA           NA   
+RES_PWM[16]          NA                                       NA             NA          NA           NA   
+RES_PWM[17]          NA                                       NA             NA          NA           NA   
+RES_PWM[18]          NA                                       NA             NA          NA           NA   
+RES_PWM[19]          NA                                       NA             NA          NA           NA   
+RES_PWM[20]          NA                                       NA             NA          NA           NA   
+RTCLK                NA                                       NA             NA          NA           NA   
+RXENb                SYSCLK (falling)                         NA             3.234       0.000             
+RXRSTb               SYSCLK (falling)                         NA             3.234       0.000             
+RX_LED1              NA                                       NA             NA          NA           NA   
+RX_LED2              NA                                       NA             NA          NA           NA   
+SP485_1_DIR          PCI_CLK2 (falling)                       NA             2.592       0.000             
+SP485_2_DIR          PCI_CLK2 (falling)                       NA             2.592       0.000             
+SPENLP_CNTL          PCI_CLK2 (falling)                       NA             2.592       0.000             
+SP_LED[0]            stat_led2_clk_pre (rising)               NA             3.229       0.000             
+SP_LED[1]            stat_led2_clk_pre (rising)               NA             2.853       0.000             
+SP_LED[2]            stat_led2_clk_pre (rising)               NA             2.853       0.000             
+SP_LED[3]            stat_led2_clk_pre (rising)               NA             2.853       0.000             
+SP_LED[4]            stat_led2_clk_pre (rising)               NA             2.853       0.000             
+SP_LED[5]            stat_led2_clk_pre (rising)               NA             2.853       0.000             
+SP_LED[6]            stat_led2_clk_pre (rising)               NA             2.853       0.000             
+SP_LED[7]            stat_led2_clk_pre (rising)               NA             2.853       0.000             
+STAT_LED1            stat_led2_clk_pre (rising)               NA             2.633       0.000             
+STAT_LED2            stat_led2_clk_pre (rising)               NA             2.633       0.000             
+STAT_LED3            stat_led2_clk_pre (rising)               NA             2.633       0.000             
+Sp485_1_D            SYSCLK (falling)                         NA             2.592       0.000             
+Sp485_2_D            SYSCLK (falling)                         NA             2.592       0.000             
+TP133                System (rising)                          NA             3.503       0.000             
+TP134                System (rising)                          NA             3.454       0.000             
+TP135                System (rising)                          NA             3.632       0.000             
+TP143                SYSCLK (falling)                         NA             2.592       0.000             
+TP145                SYSCLK (falling)                         NA             3.688       0.000             
+TP146                NA                                       NA             NA          NA           NA   
+TP147                System (rising)                          NA             3.003       0.000             
+TP148                System (rising)                          NA             3.003       0.000             
+TP149                NA                                       NA             NA          NA           NA   
+TP150                NA                                       NA             NA          NA           NA   
+TP151                NA                                       NA             NA          NA           NA   
+TP152                NA                                       NA             NA          NA           NA   
+TP156                NA                                       NA             NA          NA           NA   
+TST_SPI_CLK          SYSCLK (falling)                         NA             2.592       0.000             
+TST_SPI_CS           SYSCLK (falling)                         NA             2.592       0.000             
+TST_SPI_MOSI         SYSCLK (falling)                         NA             2.592       0.000             
+TXCMD[0]             SYSCLK (falling)                         NA             4.575       0.000             
+TXCMD[1]             SYSCLK (falling)                         NA             4.575       0.000             
+TXCMD[2]             SYSCLK (falling)                         NA             4.575       0.000             
+TXCMD[3]             SYSCLK (falling)                         NA             4.575       0.000             
+TXDATA[0]            SYSCLK (falling)                         NA             4.575       0.000             
+TXDATA[1]            SYSCLK (falling)                         NA             4.575       0.000             
+TXDATA[2]            SYSCLK (falling)                         NA             4.575       0.000             
+TXDATA[3]            SYSCLK (falling)                         NA             4.575       0.000             
+TXDATA[4]            SYSCLK (falling)                         NA             4.541       0.000             
+TXDATA[5]            SYSCLK (falling)                         NA             4.541       0.000             
+TXDATA[6]            SYSCLK (falling)                         NA             4.541       0.000             
+TXDATA[7]            SYSCLK (falling)                         NA             4.541       0.000             
+TXENb                SYSCLK (falling)                         NA             3.234       0.000             
+TXRSTb               SYSCLK (falling)                         NA             2.592       0.000             
+TXSC                 SYSCLK (falling)                         NA             4.541       0.000             
+TX_LED1              NA                                       NA             NA          NA           NA   
+TX_LED2              NA                                       NA             NA          NA           NA   
+===========================================================================================================
+
+
+
+====================================
+Detailed Report for Clock: PCI_CLK2
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                          Starting                                              Arrival          
+Instance                  Reference     Type         Pin     Net                Time        Slack
+                          Clock                                                                  
+-------------------------------------------------------------------------------------------------
+pci_target.gpio_dr[0]     PCI_CLK2      DFN0E1C0     Q       gpio_dr[0]         0.393       2.631
+pci_target.gpio_dr[1]     PCI_CLK2      DFN0E1C0     Q       gpio_dr[1]         0.393       2.631
+pci_target.gpio_dr[2]     PCI_CLK2      DFN0E1C0     Q       gpio_dr[2]         0.393       2.631
+pci_target.gpio_dr[3]     PCI_CLK2      DFN0E1C0     Q       gpio_dr[3]         0.393       2.631
+pci_target.gpio_dr[4]     PCI_CLK2      DFN0E1C0     Q       gpio_dr[4]         0.393       2.631
+pci_target.gpio_dr[5]     PCI_CLK2      DFN0E1C0     Q       gpio_dr[5]         0.393       2.631
+pci_target.gpio_dr[6]     PCI_CLK2      DFN0E1C0     Q       gpio_dr[6]         0.393       2.631
+pci_target.gpio_dr[7]     PCI_CLK2      DFN0E1C0     Q       gpio_dr[7]         0.393       2.631
+pci_target.gpio_dr[8]     PCI_CLK2      DFN0E1C0     Q       gpio_dr[8]         0.393       2.631
+adselCont[0]              PCI_CLK2      DFN0E1C1     Q       adselCont_c[0]     0.393       2.679
+=================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                     Starting                                                         Required          
+Instance             Reference     Type     Pin                  Net                  Time         Slack
+                     Clock                                                                              
+--------------------------------------------------------------------------------------------------------
+TP150                PCI_CLK2      Port     TP150                TP150                0.000        0.000
+ACC_LEDGRN           PCI_CLK2      Port     ACC_LEDGRN           ACC_LEDGRN           0.000        2.592
+ACC_LEDRED           PCI_CLK2      Port     ACC_LEDRED           ACC_LEDRED           0.000        2.592
+ACC_LED_PWR_EN       PCI_CLK2      Port     ACC_LED_PWR_EN       ACC_LED_PWR_EN       0.000        2.592
+ACC_RST_LMP_CNTL     PCI_CLK2      Port     ACC_RST_LMP_CNTL     ACC_RST_LMP_CNTL     0.000        2.592
+AD_SEL[6:0]          PCI_CLK2      Port     AD_SEL[0]            AD_SEL[0]            0.000        2.592
+AD_SEL[6:0]          PCI_CLK2      Port     AD_SEL[1]            AD_SEL[1]            0.000        2.592
+AD_SEL[6:0]          PCI_CLK2      Port     AD_SEL[2]            AD_SEL[2]            0.000        2.592
+AD_SEL[6:0]          PCI_CLK2      Port     AD_SEL[3]            AD_SEL[3]            0.000        2.592
+AD_SEL[6:0]          PCI_CLK2      Port     AD_SEL[4]            AD_SEL[4]            0.000        2.592
+========================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        2.559
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.559
+
+    Number of logic level(s):                1
+    Starting point:                          pci_target.gpio_dr[0] / Q
+    Ending point:                            PCI_TRDY / PCI_TRDY
+    The start point is clocked by            PCI_CLK2 [falling] on pin CLK
+    The end   point is clocked by            System [falling]
+
+Instance / Net                         Pin          Pin               Arrival     No. of    
+Name                      Type         Name         Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+pci_target.gpio_dr[0]     DFN0E1C0     Q            Out     0.393     0.393       -         
+gpio_dr[0]                Net          -            -       0.168     -           1         
+PCI_TRDY_pad              BIBUF        D            In      -         0.561       -         
+PCI_TRDY_pad              BIBUF        PAD          Out     1.998     2.559       -         
+PCI_TRDY                  Net          -            -       0.000     -           2(1)      
+PCI_TRDY                  Port         PCI_TRDY     Out     -         2.559       -         
+============================================================================================
+
+
+Path information for path number 2: 
+    Propagation time:                        2.559
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.559
+
+    Number of logic level(s):                1
+    Starting point:                          pci_target.gpio_dr[1] / Q
+    Ending point:                            PCI_IRDY / PCI_IRDY
+    The start point is clocked by            PCI_CLK2 [falling] on pin CLK
+    The end   point is clocked by            System [falling]
+
+Instance / Net                         Pin          Pin               Arrival     No. of    
+Name                      Type         Name         Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+pci_target.gpio_dr[1]     DFN0E1C0     Q            Out     0.393     0.393       -         
+gpio_dr[1]                Net          -            -       0.168     -           1         
+PCI_IRDY_pad              BIBUF        D            In      -         0.561       -         
+PCI_IRDY_pad              BIBUF        PAD          Out     1.998     2.559       -         
+PCI_IRDY                  Net          -            -       0.000     -           2(1)      
+PCI_IRDY                  Port         PCI_IRDY     Out     -         2.559       -         
+============================================================================================
+
+
+Path information for path number 3: 
+    Propagation time:                        2.559
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.559
+
+    Number of logic level(s):                1
+    Starting point:                          pci_target.gpio_dr[2] / Q
+    Ending point:                            PCI_PAR / PCI_PAR
+    The start point is clocked by            PCI_CLK2 [falling] on pin CLK
+    The end   point is clocked by            System [falling]
+
+Instance / Net                         Pin         Pin               Arrival     No. of    
+Name                      Type         Name        Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+pci_target.gpio_dr[2]     DFN0E1C0     Q           Out     0.393     0.393       -         
+gpio_dr[2]                Net          -           -       0.168     -           1         
+PCI_PAR_pad               BIBUF        D           In      -         0.561       -         
+PCI_PAR_pad               BIBUF        PAD         Out     1.998     2.559       -         
+PCI_PAR                   Net          -           -       0.000     -           2(1)      
+PCI_PAR                   Port         PCI_PAR     Out     -         2.559       -         
+===========================================================================================
+
+
+Path information for path number 4: 
+    Propagation time:                        2.559
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.559
+
+    Number of logic level(s):                1
+    Starting point:                          pci_target.gpio_dr[3] / Q
+    Ending point:                            PCI_STOP / PCI_STOP
+    The start point is clocked by            PCI_CLK2 [falling] on pin CLK
+    The end   point is clocked by            System [falling]
+
+Instance / Net                         Pin          Pin               Arrival     No. of    
+Name                      Type         Name         Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+pci_target.gpio_dr[3]     DFN0E1C0     Q            Out     0.393     0.393       -         
+gpio_dr[3]                Net          -            -       0.168     -           1         
+PCI_STOP_pad              BIBUF        D            In      -         0.561       -         
+PCI_STOP_pad              BIBUF        PAD          Out     1.998     2.559       -         
+PCI_STOP                  Net          -            -       0.000     -           2(1)      
+PCI_STOP                  Port         PCI_STOP     Out     -         2.559       -         
+============================================================================================
+
+
+Path information for path number 5: 
+    Propagation time:                        2.559
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.559
+
+    Number of logic level(s):                1
+    Starting point:                          pci_target.gpio_dr[4] / Q
+    Ending point:                            PCI_GNT0 / PCI_GNT0
+    The start point is clocked by            PCI_CLK2 [falling] on pin CLK
+    The end   point is clocked by            System [falling]
+
+Instance / Net                         Pin          Pin               Arrival     No. of    
+Name                      Type         Name         Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------
+pci_target.gpio_dr[4]     DFN0E1C0     Q            Out     0.393     0.393       -         
+gpio_dr[4]                Net          -            -       0.168     -           1         
+PCI_GNT0_pad              BIBUF        D            In      -         0.561       -         
+PCI_GNT0_pad              BIBUF        PAD          Out     1.998     2.559       -         
+PCI_GNT0                  Net          -            -       0.000     -           2(1)      
+PCI_GNT0                  Port         PCI_GNT0     Out     -         2.559       -         
+============================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: SD_CLK16x
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                    Starting                                           Arrival          
+Instance                            Reference     Type         Pin     Net             Time        Slack
+                                    Clock                                                               
+--------------------------------------------------------------------------------------------------------
+coll_mod.med_mod.u2.clkdiv_0[3]     SD_CLK16x     DFN1C1       Q       clkdiv_i[3]     0.434       3.371
+coll_mod.txr_cnt[3]                 SD_CLK16x     DFN0E0C0     Q       txr_cnt[3]      0.393       7.354
+coll_mod.txr_cnt[2]                 SD_CLK16x     DFN0E0C0     Q       txr_cnt[2]      0.393       7.852
+coll_mod.txr_cnt[6]                 SD_CLK16x     DFN0E0C0     Q       txr_cnt[6]      0.393       7.852
+coll_mod.txr_cnt[9]                 SD_CLK16x     DFN0E0C0     Q       txr_cnt[9]      0.393       8.022
+coll_mod.txr_cnt[8]                 SD_CLK16x     DFN0E0C0     Q       txr_cnt[8]      0.393       8.231
+coll_mod.txr_cnt[7]                 SD_CLK16x     DFN0E0C0     Q       txr_cnt[7]      0.393       8.299
+coll_mod.txr_cnt[1]                 SD_CLK16x     DFN0E0C0     Q       txr_cnt[1]      0.393       8.413
+coll_mod.txr_cnt[5]                 SD_CLK16x     DFN0E0C0     Q       txr_cnt[5]      0.393       8.677
+coll_mod.txr_busy                   SD_CLK16x     DFN0E1C0     Q       txr_busy        0.393       8.709
+========================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                  Starting                                                   Required          
+Instance          Reference     Type     Pin               Net               Time         Slack
+                  Clock                                                                        
+-----------------------------------------------------------------------------------------------
+COLLISION_OUT     SD_CLK16x     Port     COLLISION_OUT     COLLISION_OUT     0.000        3.299
+===============================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        3.299
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 3.299
+
+    Number of logic level(s):                2
+    Starting point:                          coll_mod.med_mod.u2.clkdiv_0[3] / Q
+    Ending point:                            COLLISION_OUT / COLLISION_OUT
+    The start point is clocked by            SD_CLK16x [rising] on pin CLK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                    Pin               Pin               Arrival     No. of    
+Name                                   Type       Name              Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+coll_mod.med_mod.u2.clkdiv_0[3]        DFN1C1     Q                 Out     0.434     0.434       -         
+clkdiv_i[3]                            Net        -                 -       0.000     -           14        
+coll_mod.med_mod.u2.tsr_RNIBVC9[7]     XOR2       B                 In      -         0.434       -         
+coll_mod.med_mod.u2.tsr_RNIBVC9[7]     XOR2       Y                 Out     0.700     1.133       -         
+COLLISION_OUT_c                        Net        -                 -       0.168     -           1         
+COLLISION_OUT_pad                      OUTBUF     D                 In      -         1.301       -         
+COLLISION_OUT_pad                      OUTBUF     PAD               Out     1.998     3.299       -         
+COLLISION_OUT                          Net        -                 -       0.000     -           1         
+COLLISION_OUT                          Port       COLLISION_OUT     Out     -         3.299       -         
+============================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: SYSCLK
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                             Starting                                                 Arrival          
+Instance                     Reference     Type         Pin     Net                   Time        Slack
+                             Clock                                                                     
+-------------------------------------------------------------------------------------------------------
+mel_mod.MEL_ERROR_RESET      SYSCLK        DFN0         Q       MEL_ERROR_RESET_c     0.393       2.631
+ilim_dac_mod.ILIM_DAC_CS     SYSCLK        DFN1E0P1     Q       ILIM_DAC_CS_c         0.434       2.671
+brg3.PulseSample             SYSCLK        DFN1E0C1     Q       PD_CUR_SL_1_c[3]      0.434       2.671
+brg4.PulseSample             SYSCLK        DFN1E0C1     Q       PD_CUR_SL_1_c[4]      0.434       2.671
+brg2.PulseSample             SYSCLK        DFN1E0C1     Q       PD_CUR_SL_1_c[2]      0.434       2.671
+brg1.PulseSample             SYSCLK        DFN1E0C1     Q       PD_CUR_SL_1_c[1]      0.434       2.671
+brg5.PulseSample             SYSCLK        DFN1E0C1     Q       PD_CUR_SL_1_c[5]      0.434       2.671
+mel_mod.MEL_ACK              SYSCLK        DFN0E0C1     Q       TP143_c_c             0.393       2.679
+hotlink.txreset              SYSCLK        DFN0P1       Q       txreset_i             0.393       2.679
+ilim_dac_mod.buffer[10]      SYSCLK        DFN1E0C1     Q       buffer[10]            0.434       2.719
+=======================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                  Starting                                                 Required          
+Instance          Reference     Type     Pin              Net              Time         Slack
+                  Clock                                                                      
+---------------------------------------------------------------------------------------------
+AD1_SCLK          SYSCLK        Port     AD1_SCLK         AD1_SCLK         0.000        0.000
+AD2_SCLK          SYSCLK        Port     AD2_SCLK         AD2_SCLK         0.000        0.000
+CAN_CCLK          SYSCLK        Port     CAN_CCLK         CAN_CCLK         0.000        0.000
+ILIM_DAC_CLK      SYSCLK        Port     ILIM_DAC_CLK     ILIM_DAC_CLK     0.000        0.000
+RES_PWM[20:1]     SYSCLK        Port     RES_PWM[1]       RES_PWM[1]       0.000        0.000
+RES_PWM[20:1]     SYSCLK        Port     RES_PWM[2]       RES_PWM[2]       0.000        0.000
+RES_PWM[20:1]     SYSCLK        Port     RES_PWM[3]       RES_PWM[3]       0.000        0.000
+RES_PWM[20:1]     SYSCLK        Port     RES_PWM[4]       RES_PWM[4]       0.000        0.000
+RES_PWM[20:1]     SYSCLK        Port     RES_PWM[5]       RES_PWM[5]       0.000        0.000
+RES_PWM[20:1]     SYSCLK        Port     RES_PWM[6]       RES_PWM[6]       0.000        0.000
+=============================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        2.559
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.559
+
+    Number of logic level(s):                1
+    Starting point:                          mel_mod.MEL_ERROR_RESET / Q
+    Ending point:                            MEL_ERROR_RESET / MEL_ERROR_RESET
+    The start point is clocked by            SYSCLK [falling] on pin CLK
+    The end   point is clocked by            System [falling]
+
+Instance / Net                         Pin                 Pin               Arrival     No. of    
+Name                        Type       Name                Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------------------------
+mel_mod.MEL_ERROR_RESET     DFN0       Q                   Out     0.393     0.393       -         
+MEL_ERROR_RESET_c           Net        -                   -       0.168     -           1         
+MEL_ERROR_RESET_pad         OUTBUF     D                   In      -         0.561       -         
+MEL_ERROR_RESET_pad         OUTBUF     PAD                 Out     1.998     2.559       -         
+MEL_ERROR_RESET             Net        -                   -       0.000     -           1         
+MEL_ERROR_RESET             Port       MEL_ERROR_RESET     Out     -         2.559       -         
+===================================================================================================
+
+
+Path information for path number 2: 
+    Propagation time:                        2.599
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.599
+
+    Number of logic level(s):                1
+    Starting point:                          ilim_dac_mod.ILIM_DAC_CS / Q
+    Ending point:                            ILIM_DAC_CS / ILIM_DAC_CS
+    The start point is clocked by            SYSCLK [rising] on pin CLK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                            Pin             Pin               Arrival     No. of    
+Name                         Type         Name            Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------
+ilim_dac_mod.ILIM_DAC_CS     DFN1E0P1     Q               Out     0.434     0.434       -         
+ILIM_DAC_CS_c                Net          -               -       0.168     -           1         
+ILIM_DAC_CS_pad              OUTBUF       D               In      -         0.602       -         
+ILIM_DAC_CS_pad              OUTBUF       PAD             Out     1.998     2.599       -         
+ILIM_DAC_CS                  Net          -               -       0.000     -           1         
+ILIM_DAC_CS                  Port         ILIM_DAC_CS     Out     -         2.599       -         
+==================================================================================================
+
+
+Path information for path number 3: 
+    Propagation time:                        2.599
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.599
+
+    Number of logic level(s):                1
+    Starting point:                          brg3.PulseSample / Q
+    Ending point:                            PD_CUR_SL[5:1] / PD_CUR_SL[3]
+    The start point is clocked by            SYSCLK [rising] on pin CLK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                    Pin              Pin               Arrival     No. of    
+Name                 Type         Name             Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+brg3.PulseSample     DFN1E0C1     Q                Out     0.434     0.434       -         
+PD_CUR_SL_1_c[3]     Net          -                -       0.168     -           1         
+PD_CUR_SL_pad[3]     OUTBUF       D                In      -         0.602       -         
+PD_CUR_SL_pad[3]     OUTBUF       PAD              Out     1.998     2.599       -         
+PD_CUR_SL[3]         Net          -                -       0.000     -           1         
+PD_CUR_SL[5:1]       Port         PD_CUR_SL[3]     Out     -         2.599       -         
+===========================================================================================
+
+
+Path information for path number 4: 
+    Propagation time:                        2.599
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.599
+
+    Number of logic level(s):                1
+    Starting point:                          brg4.PulseSample / Q
+    Ending point:                            PD_CUR_SL[5:1] / PD_CUR_SL[4]
+    The start point is clocked by            SYSCLK [rising] on pin CLK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                    Pin              Pin               Arrival     No. of    
+Name                 Type         Name             Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+brg4.PulseSample     DFN1E0C1     Q                Out     0.434     0.434       -         
+PD_CUR_SL_1_c[4]     Net          -                -       0.168     -           1         
+PD_CUR_SL_pad[4]     OUTBUF       D                In      -         0.602       -         
+PD_CUR_SL_pad[4]     OUTBUF       PAD              Out     1.998     2.599       -         
+PD_CUR_SL[4]         Net          -                -       0.000     -           1         
+PD_CUR_SL[5:1]       Port         PD_CUR_SL[4]     Out     -         2.599       -         
+===========================================================================================
+
+
+Path information for path number 5: 
+    Propagation time:                        2.599
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.599
+
+    Number of logic level(s):                1
+    Starting point:                          brg2.PulseSample / Q
+    Ending point:                            PD_CUR_SL[5:1] / PD_CUR_SL[2]
+    The start point is clocked by            SYSCLK [rising] on pin CLK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                    Pin              Pin               Arrival     No. of    
+Name                 Type         Name             Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------
+brg2.PulseSample     DFN1E0C1     Q                Out     0.434     0.434       -         
+PD_CUR_SL_1_c[2]     Net          -                -       0.168     -           1         
+PD_CUR_SL_pad[2]     OUTBUF       D                In      -         0.602       -         
+PD_CUR_SL_pad[2]     OUTBUF       PAD              Out     1.998     2.599       -         
+PD_CUR_SL[2]         Net          -                -       0.000     -           1         
+PD_CUR_SL[5:1]       Port         PD_CUR_SL[2]     Out     -         2.599       -         
+===========================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: SYSCLK_IN
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+             Starting                                    Arrival          
+Instance     Reference     Type     Pin     Net          Time        Slack
+             Clock                                                        
+--------------------------------------------------------------------------
+SYSCLK       SYSCLK_IN     DFN1     Q       SYSCLK_i     0.434       2.931
+==========================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                  Starting                                             Required          
+Instance          Reference     Type     Pin            Net            Time         Slack
+                  Clock                                                                  
+-----------------------------------------------------------------------------------------
+TP156             SYSCLK_IN     Port     TP156          TP156          0.000        2.859
+CAN_CCLK          SYSCLK_IN     Port     CAN_CCLK       CAN_CCLK       0.000        3.283
+RTCLK             SYSCLK_IN     Port     RTCLK          RTCLK          0.000        3.283
+TP146             SYSCLK_IN     Port     TP146          TP146          0.000        3.283
+TP149             SYSCLK_IN     Port     TP149          TP149          0.000        3.283
+TP151             SYSCLK_IN     Port     TP151          TP151          0.000        3.283
+TP152             SYSCLK_IN     Port     TP152          TP152          0.000        3.543
+RES_PWM[20:1]     SYSCLK_IN     Port     RES_PWM[1]     RES_PWM[1]     0.000        3.669
+RES_PWM[20:1]     SYSCLK_IN     Port     RES_PWM[3]     RES_PWM[3]     0.000        3.669
+RES_PWM[20:1]     SYSCLK_IN     Port     RES_PWM[5]     RES_PWM[5]     0.000        3.669
+=========================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        2.859
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.859
+
+    Number of logic level(s):                2
+    Starting point:                          SYSCLK / Q
+    Ending point:                            TP156 / TP156
+    The start point is clocked by            SYSCLK_IN [rising] on pin CLK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                Pin       Pin               Arrival     No. of    
+Name               Type       Name      Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------
+SYSCLK             DFN1       Q         Out     0.434     0.434       -         
+SYSCLK_i           Net        -         -       0.168     -           1         
+SYSCLK_RNIN4R5     CLKINT     A         In      -         0.602       -         
+SYSCLK_RNIN4R5     CLKINT     Y         Out     0.260     0.861       -         
+SYSCLK_c           Net        -         -       0.000     -           1137      
+TP156_pad          OUTBUF     D         In      -         0.861       -         
+TP156_pad          OUTBUF     PAD       Out     1.998     2.859       -         
+TP156              Net        -         -       0.000     -           1         
+TP156              Port       TP156     Out     -         2.859       -         
+================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: aqclk
+====================================
+
+
+
+Ending Points with Worst Slack
+******************************
+
+             Starting                                   Required          
+Instance     Reference     Type     Pin       Net       Time         Slack
+             Clock                                                        
+--------------------------------------------------------------------------
+TP151        aqclk         Port     TP151     TP151     0.000        0.000
+==========================================================================
+
+
+
+Worst Path Information
+***********************
+
+    No path found starting from clock: aqclk.
+
+
+
+====================================
+Detailed Report for Clock: me|clkdiv_inferred_clock[3]
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                               Starting                                                        Arrival          
+Instance                       Reference                       Type         Pin     Net        Time        Slack
+                               Clock                                                                            
+----------------------------------------------------------------------------------------------------------------
+coll_mod.med_mod.u2.tsr[7]     me|clkdiv_inferred_clock[3]     DFN1E1C1     Q       tsr[7]     0.434       3.276
+================================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                  Starting                                                                     Required          
+Instance          Reference                       Type     Pin               Net               Time         Slack
+                  Clock                                                                                          
+-----------------------------------------------------------------------------------------------------------------
+COLLISION_OUT     me|clkdiv_inferred_clock[3]     Port     COLLISION_OUT     COLLISION_OUT     0.000        3.132
+=================================================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        3.132
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 3.132
+
+    Number of logic level(s):                2
+    Starting point:                          coll_mod.med_mod.u2.tsr[7] / Q
+    Ending point:                            COLLISION_OUT / COLLISION_OUT
+    The start point is clocked by            me|clkdiv_inferred_clock[3] [rising] on pin CLK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                      Pin               Pin               Arrival     No. of    
+Name                                   Type         Name              Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------
+coll_mod.med_mod.u2.tsr[7]             DFN1E1C1     Q                 Out     0.434     0.434       -         
+tsr[7]                                 Net          -                 -       0.168     -           1         
+coll_mod.med_mod.u2.tsr_RNIBVC9[7]     XOR2         A                 In      -         0.602       -         
+coll_mod.med_mod.u2.tsr_RNIBVC9[7]     XOR2         Y                 Out     0.365     0.966       -         
+COLLISION_OUT_c                        Net          -                 -       0.168     -           1         
+COLLISION_OUT_pad                      OUTBUF       D                 In      -         1.134       -         
+COLLISION_OUT_pad                      OUTBUF       PAD               Out     1.998     3.132       -         
+COLLISION_OUT                          Net          -                 -       0.000     -           1         
+COLLISION_OUT                          Port         COLLISION_OUT     Out     -         3.132       -         
+==============================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: pci_16kHz
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                        Starting                                       Arrival           
+Instance                Reference     Type       Pin     Net           Time        Slack 
+                        Clock                                                            
+-----------------------------------------------------------------------------------------
+osc_count.cntr_trig     pci_16kHz     DFN1C1     Q       cntr_trig     0.434       10.204
+=========================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        9.147
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 9.147
+
+    Number of logic level(s):                12
+    Starting point:                          osc_count.cntr_trig / Q
+    Ending point:                            PCI_AD[31:0] / PCI_AD[2]
+    The start point is clocked by            pci_16kHz [falling] on pin CLK
+    The end   point is clocked by            System [falling]
+
+Instance / Net                                                    Pin           Pin               Arrival     No. of    
+Name                                                   Type       Name          Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------------
+osc_count.cntr_trig                                    DFN1C1     Q             Out     0.434     0.434       -         
+cntr_trig                                              Net        -             -       0.619     -           4         
+osc_count.cntr_trig_RNIE39R4                           OAI1       A             In      -         1.052       -         
+osc_count.cntr_trig_RNIE39R4                           OAI1       Y             Out     0.275     1.327       -         
+control_m[2]                                           Net        -             -       0.168     -           1         
+osc_count.cntr_trig_RNI83VU9                           NOR2B      A             In      -         1.495       -         
+osc_count.cntr_trig_RNI83VU9                           NOR2B      Y             Out     0.384     1.880       -         
+opb_do_iv_1[2]                                         Net        -             -       0.168     -           1         
+ad2_mod.data_in_ram.Ram4096x16_TPort_R0C2_RNIDF60J     NOR3C      C             In      -         2.048       -         
+ad2_mod.data_in_ram.Ram4096x16_TPort_R0C2_RNIDF60J     NOR3C      Y             Out     0.479     2.527       -         
+opb_do_iv_3[2]                                         Net        -             -       0.168     -           1         
+ilim_dac_mod.data_RNIMRC691[2]                         NOR3C      B             In      -         2.695       -         
+ilim_dac_mod.data_RNIMRC691[2]                         NOR3C      Y             Out     0.453     3.148       -         
+opb_do_iv_12[2]                                        Net        -             -       0.168     -           1         
+ilim_dac_mod.data_RNIFLVHN2[2]                         NOR3C      A             In      -         3.316       -         
+ilim_dac_mod.data_RNIFLVHN2[2]                         NOR3C      Y             Out     0.346     3.662       -         
+opb_do_iv_15[2]                                        Net        -             -       0.168     -           1         
+brk1.over_i_set_RNIQ5P423[2]                           NOR3C      A             In      -         3.830       -         
+brk1.over_i_set_RNIQ5P423[2]                           NOR3C      Y             Out     0.346     4.177       -         
+opb_do_iv_20[2]                                        Net        -             -       0.168     -           1         
+brk1.CycleCount_RNI63IO26[2]                           NOR3C      B             In      -         4.345       -         
+brk1.CycleCount_RNI63IO26[2]                           NOR3C      Y             Out     0.453     4.798       -         
+opb_do_iv_26[2]                                        Net        -             -       0.168     -           1         
+brg3.CycleCount_RNIUEARI7[2]                           NOR3C      A             In      -         4.966       -         
+brg3.CycleCount_RNIUEARI7[2]                           NOR3C      Y             Out     0.346     5.313       -         
+opb_do_iv_30[2]                                        Net        -             -       0.168     -           1         
+brg5.CycleCount_RNIHO9QOE[2]                           NOR3C      A             In      -         5.481       -         
+brg5.CycleCount_RNIHO9QOE[2]                           NOR3C      Y             Out     0.346     5.827       -         
+opb_do_iv_33[2]                                        Net        -             -       0.168     -           1         
+hotlink.tx_size_RNILESNNO[2]                           OR3C       C             In      -         5.995       -         
+hotlink.tx_size_RNILESNNO[2]                           OR3C       Y             Out     0.479     6.474       -         
+opb_do[2]                                              Net        -             -       0.168     -           1         
+pci_target.gpio_ddr_RNI3DB9CP[2]                       AO1C       B             In      -         6.642       -         
+pci_target.gpio_ddr_RNI3DB9CP[2]                       AO1C       Y             Out     0.339     6.981       -         
+OPB_DI_t[2]                                            Net        -             -       0.168     -           1         
+PCI_AD_pad[2]                                          BIBUF      D             In      -         7.149       -         
+PCI_AD_pad[2]                                          BIBUF      PAD           Out     1.998     9.147       -         
+PCI_AD[2]                                              Net        -             -       0.000     -           2(1)      
+PCI_AD[31:0]                                           Port       PCI_AD[2]     Out     -         9.147       -         
+========================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: pci_clk_div
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                   Starting                                                Arrival          
+Instance                           Reference       Type         Pin     Net                Time        Slack
+                                   Clock                                                                    
+------------------------------------------------------------------------------------------------------------
+rs485_mod.test_pattern_buf[3]      pci_clk_div     DFN0E0C1     Q       Sp485_2_D_c        0.393       2.679
+rs485_mod.test_pattern_buf[7]      pci_clk_div     DFN0E0C1     Q       Sp485_1_D_c        0.393       2.679
+rs485_mod.test_pattern_buf[11]     pci_clk_div     DFN0E0C1     Q       TST_SPI_CS_c       0.393       2.679
+rs485_mod.test_pattern_buf[15]     pci_clk_div     DFN0E0C1     Q       TST_SPI_MOSI_c     0.393       2.679
+rs485_mod.test_pattern_buf[19]     pci_clk_div     DFN0E0C1     Q       TST_SPI_CLK_c      0.393       2.679
+rs485_mod.test_pattern_buf[27]     pci_clk_div     DFN0E0C1     Q       COLL_CLK_OUT_c     0.393       2.679
+rs485_mod.test_pattern_buf[31]     pci_clk_div     DFN0E0C1     Q       COLL_CS_OUTb_c     0.393       2.679
+============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                 Starting                                                   Required          
+Instance         Reference       Type     Pin              Net              Time         Slack
+                 Clock                                                                        
+----------------------------------------------------------------------------------------------
+COLL_CLK_OUT     pci_clk_div     Port     COLL_CLK_OUT     COLL_CLK_OUT     0.000        2.592
+COLL_CS_OUTb     pci_clk_div     Port     COLL_CS_OUTb     COLL_CS_OUTb     0.000        2.592
+Sp485_1_D        pci_clk_div     Port     Sp485_1_D        Sp485_1_D        0.000        2.592
+Sp485_2_D        pci_clk_div     Port     Sp485_2_D        Sp485_2_D        0.000        2.592
+TST_SPI_CLK      pci_clk_div     Port     TST_SPI_CLK      TST_SPI_CLK      0.000        2.592
+TST_SPI_CS       pci_clk_div     Port     TST_SPI_CS       TST_SPI_CS       0.000        2.592
+TST_SPI_MOSI     pci_clk_div     Port     TST_SPI_MOSI     TST_SPI_MOSI     0.000        2.592
+==============================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        2.592
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.592
+
+    Number of logic level(s):                1
+    Starting point:                          rs485_mod.test_pattern_buf[3] / Q
+    Ending point:                            Sp485_2_D / Sp485_2_D
+    The start point is clocked by            pci_clk_div [falling] on pin CLK
+    The end   point is clocked by            System [falling]
+
+Instance / Net                                 Pin           Pin               Arrival     No. of    
+Name                              Type         Name          Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------------------
+rs485_mod.test_pattern_buf[3]     DFN0E0C1     Q             Out     0.393     0.393       -         
+Sp485_2_D_c                       Net          -             -       0.202     -           2         
+Sp485_2_D_pad                     OUTBUF       D             In      -         0.595       -         
+Sp485_2_D_pad                     OUTBUF       PAD           Out     1.998     2.592       -         
+Sp485_2_D                         Net          -             -       0.000     -           1         
+Sp485_2_D                         Port         Sp485_2_D     Out     -         2.592       -         
+=====================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: sclk
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                       Starting                                            Arrival          
+Instance               Reference     Type         Pin     Net              Time        Slack
+                       Clock                                                                
+--------------------------------------------------------------------------------------------
+ad2_mod.AD_CNVST       sclk          DFN0E0P1     Q       AD2_CNVSTb_c     0.393       2.631
+ad1_mod.AD_CNVST       sclk          DFN0E0P1     Q       AD1_CNVSTb_c     0.393       2.631
+ad2_mod.ad_sclk_en     sclk          DFN0E1C1     Q       ad_sclk_en       0.393       2.996
+ad1_mod.ad_sclk_en     sclk          DFN0E1C1     Q       ad_sclk_en       0.393       2.996
+ad1_mod.status[3]      sclk          DFN0E0C1     Q       status[3]        0.393       8.480
+ad1_mod.status[1]      sclk          DFN0E0C1     Q       status[1]        0.393       8.850
+ad1_mod.status[2]      sclk          DFN0E0C1     Q       status[2]        0.393       8.861
+ad2_mod.status[2]      sclk          DFN0E0C1     Q       status[2]        0.393       9.002
+ad2_mod.status[3]      sclk          DFN0E0C1     Q       status[3]        0.393       9.530
+ad2_mod.status[0]      sclk          DFN0E0C1     Q       status[0]        0.393       9.577
+============================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+               Starting                                             Required          
+Instance       Reference     Type     Pin            Net            Time         Slack
+               Clock                                                                  
+--------------------------------------------------------------------------------------
+AD1_SCLK       sclk          Port     AD1_SCLK       AD1_SCLK       0.000        0.000
+AD2_SCLK       sclk          Port     AD2_SCLK       AD2_SCLK       0.000        0.000
+TP152          sclk          Port     TP152          TP152          0.000        0.000
+AD1_CNVSTb     sclk          Port     AD1_CNVSTb     AD1_CNVSTb     0.000        2.559
+AD2_CNVSTb     sclk          Port     AD2_CNVSTb     AD2_CNVSTb     0.000        2.559
+======================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        2.559
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.559
+
+    Number of logic level(s):                1
+    Starting point:                          ad2_mod.AD_CNVST / Q
+    Ending point:                            AD2_CNVSTb / AD2_CNVSTb
+    The start point is clocked by            sclk [falling] on pin CLK
+    The end   point is clocked by            System [falling]
+
+Instance / Net                    Pin            Pin               Arrival     No. of    
+Name                 Type         Name           Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------
+ad2_mod.AD_CNVST     DFN0E0P1     Q              Out     0.393     0.393       -         
+AD2_CNVSTb_c         Net          -              -       0.168     -           1         
+AD2_CNVSTb_pad       OUTBUF       D              In      -         0.561       -         
+AD2_CNVSTb_pad       OUTBUF       PAD            Out     1.998     2.559       -         
+AD2_CNVSTb           Net          -              -       0.000     -           1         
+AD2_CNVSTb           Port         AD2_CNVSTb     Out     -         2.559       -         
+=========================================================================================
+
+
+Path information for path number 2: 
+    Propagation time:                        2.559
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.559
+
+    Number of logic level(s):                1
+    Starting point:                          ad1_mod.AD_CNVST / Q
+    Ending point:                            AD1_CNVSTb / AD1_CNVSTb
+    The start point is clocked by            sclk [falling] on pin CLK
+    The end   point is clocked by            System [falling]
+
+Instance / Net                    Pin            Pin               Arrival     No. of    
+Name                 Type         Name           Dir     Delay     Time        Fan Out(s)
+-----------------------------------------------------------------------------------------
+ad1_mod.AD_CNVST     DFN0E0P1     Q              Out     0.393     0.393       -         
+AD1_CNVSTb_c         Net          -              -       0.168     -           1         
+AD1_CNVSTb_pad       OUTBUF       D              In      -         0.561       -         
+AD1_CNVSTb_pad       OUTBUF       PAD            Out     1.998     2.559       -         
+AD1_CNVSTb           Net          -              -       0.000     -           1         
+AD1_CNVSTb           Port         AD1_CNVSTb     Out     -         2.559       -         
+=========================================================================================
+
+
+Path information for path number 3: 
+    Propagation time:                        2.924
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.924
+
+    Number of logic level(s):                2
+    Starting point:                          ad2_mod.ad_sclk_en / Q
+    Ending point:                            AD2_SCLK / AD2_SCLK
+    The start point is clocked by            sclk [falling] on pin CLK
+    The end   point is clocked by            System [falling]
+
+Instance / Net                              Pin          Pin               Arrival     No. of    
+Name                           Type         Name         Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------
+ad2_mod.ad_sclk_en             DFN0E1C1     Q            Out     0.393     0.393       -         
+ad_sclk_en                     Net          -            -       0.168     -           1         
+ad2_mod.ad_sclk_en_RNIL54V     NOR2B        A            In      -         0.561       -         
+ad2_mod.ad_sclk_en_RNIL54V     NOR2B        Y            Out     0.365     0.926       -         
+AD2_SCLK_c                     Net          -            -       0.000     -           1         
+AD2_SCLK_pad                   OUTBUF       D            In      -         0.926       -         
+AD2_SCLK_pad                   OUTBUF       PAD          Out     1.998     2.924       -         
+AD2_SCLK                       Net          -            -       0.000     -           1         
+AD2_SCLK                       Port         AD2_SCLK     Out     -         2.924       -         
+=================================================================================================
+
+
+Path information for path number 4: 
+    Propagation time:                        2.924
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.924
+
+    Number of logic level(s):                2
+    Starting point:                          ad1_mod.ad_sclk_en / Q
+    Ending point:                            AD1_SCLK / AD1_SCLK
+    The start point is clocked by            sclk [falling] on pin CLK
+    The end   point is clocked by            System [falling]
+
+Instance / Net                              Pin          Pin               Arrival     No. of    
+Name                           Type         Name         Dir     Delay     Time        Fan Out(s)
+-------------------------------------------------------------------------------------------------
+ad1_mod.ad_sclk_en             DFN0E1C1     Q            Out     0.393     0.393       -         
+ad_sclk_en                     Net          -            -       0.168     -           1         
+ad1_mod.ad_sclk_en_RNIA18Q     NOR2B        A            In      -         0.561       -         
+ad1_mod.ad_sclk_en_RNIA18Q     NOR2B        Y            Out     0.365     0.926       -         
+AD1_SCLK_c                     Net          -            -       0.000     -           1         
+AD1_SCLK_pad                   OUTBUF       D            In      -         0.926       -         
+AD1_SCLK_pad                   OUTBUF       PAD          Out     1.998     2.924       -         
+AD1_SCLK                       Net          -            -       0.000     -           1         
+AD1_SCLK                       Port         AD1_SCLK     Out     -         2.924       -         
+=================================================================================================
+
+
+Path information for path number 5: 
+    Propagation time:                        7.746
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 7.746
+
+    Number of logic level(s):                10
+    Starting point:                          ad1_mod.status[3] / Q
+    Ending point:                            PCI_AD[31:0] / PCI_AD[3]
+    The start point is clocked by            sclk [falling] on pin CLK
+    The end   point is clocked by            System [falling]
+
+Instance / Net                                    Pin           Pin               Arrival     No. of    
+Name                                 Type         Name          Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------
+ad1_mod.status[3]                    DFN0E0C1     Q             Out     0.393     0.393       -         
+status[3]                            Net          -             -       0.202     -           2         
+ad1_mod.status_RNI6HK98[3]           AOI1B        A             In      -         0.595       -         
+ad1_mod.status_RNI6HK98[3]           AOI1B        Y             Out     0.475     1.070       -         
+OPB_DO_2_iv_0_0[3]                   Net          -             -       0.168     -           1         
+ad1_mod.status_RNI1NF2J[3]           OR3C         A             In      -         1.238       -         
+ad1_mod.status_RNI1NF2J[3]           OR3C         Y             Out     0.346     1.585       -         
+OPB_DO_2_t[3]                        Net          -             -       0.168     -           1         
+ad1_mod.status_RNIUM5GI1[3]          AOI1B        A             In      -         1.753       -         
+ad1_mod.status_RNIUM5GI1[3]          AOI1B        Y             Out     0.475     2.228       -         
+opb_do_iv_9[3]                       Net          -             -       0.168     -           1         
+digital_out_RNIO4IJN1[3]             NOR2B        B             In      -         2.396       -         
+digital_out_RNIO4IJN1[3]             NOR2B        Y             Out     0.469     2.864       -         
+opb_do_iv_11[3]                      Net          -             -       0.168     -           1         
+digital_out_RNIHIN076[3]             NOR3C        C             In      -         3.032       -         
+digital_out_RNIHIN076[3]             NOR3C        Y             Out     0.479     3.511       -         
+opb_do_iv_12[3]                      Net          -             -       0.168     -           1         
+brg4.CycleCount_RNIDTJ627[3]         OA1A         C             In      -         3.679       -         
+brg4.CycleCount_RNIDTJ627[3]         OA1A         Y             Out     0.302     3.982       -         
+opb_do_iv_14[3]                      Net          -             -       0.168     -           1         
+brg5.CycleCount_RNID8GCT7[3]         OA1A         C             In      -         4.150       -         
+brg5.CycleCount_RNID8GCT7[3]         OA1A         Y             Out     0.302     4.452       -         
+opb_do_iv_17[3]                      Net          -             -       0.168     -           1         
+brg5.CycleCount_RNIOFFI4P[3]         OR3C         B             In      -         4.620       -         
+brg5.CycleCount_RNIOFFI4P[3]         OR3C         Y             Out     0.453     5.073       -         
+opb_do[3]                            Net          -             -       0.168     -           1         
+pci_target.gpio_ddr_RNIVP14PP[3]     AO1C         B             In      -         5.241       -         
+pci_target.gpio_ddr_RNIVP14PP[3]     AO1C         Y             Out     0.339     5.580       -         
+OPB_DI_t[3]                          Net          -             -       0.168     -           1         
+PCI_AD_pad[3]                        BIBUF        D             In      -         5.748       -         
+PCI_AD_pad[3]                        BIBUF        PAD           Out     1.998     7.746       -         
+PCI_AD[3]                            Net          -             -       0.000     -           2(1)      
+PCI_AD[31:0]                         Port         PCI_AD[3]     Out     -         7.746       -         
+========================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: stat_led2_clk
+====================================
+
+
+
+Ending Points with Worst Slack
+******************************
+
+                Starting                                               Required          
+Instance        Reference         Type     Pin           Net           Time         Slack
+                Clock                                                                    
+-----------------------------------------------------------------------------------------
+HEARTBEAT       stat_led2_clk     Port     HEARTBEAT     HEARTBEAT     0.000        0.000
+RX_LED1         stat_led2_clk     Port     RX_LED1       RX_LED1       0.000        0.000
+RX_LED2         stat_led2_clk     Port     RX_LED2       RX_LED2       0.000        0.000
+TX_LED1         stat_led2_clk     Port     TX_LED1       TX_LED1       0.000        0.000
+TX_LED2         stat_led2_clk     Port     TX_LED2       TX_LED2       0.000        0.000
+STAT_LED1       stat_led2_clk     Port     STAT_LED1     STAT_LED1     0.000        2.633
+STAT_LED2       stat_led2_clk     Port     STAT_LED2     STAT_LED2     0.000        2.633
+STAT_LED3       stat_led2_clk     Port     STAT_LED3     STAT_LED3     0.000        2.633
+SP_LED[7:0]     stat_led2_clk     Port     SP_LED[1]     SP_LED[1]     0.000        2.853
+SP_LED[7:0]     stat_led2_clk     Port     SP_LED[2]     SP_LED[2]     0.000        2.853
+=========================================================================================
+
+
+
+Worst Path Information
+***********************
+
+    No path found starting from clock: stat_led2_clk.
+
+
+
+====================================
+Detailed Report for Clock: stat_led2_clk_pre
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+                                Starting                                                   Arrival          
+Instance                        Reference             Type         Pin     Net             Time        Slack
+                                Clock                                                                       
+------------------------------------------------------------------------------------------------------------
+ledcontrol.statLedReg[0]        stat_led2_clk_pre     DFN1C1       Q       STAT_LED1_c     0.434       2.719
+ledcontrol.statLedReg[1]        stat_led2_clk_pre     DFN1P1       Q       STAT_LED2_c     0.434       2.719
+ledcontrol.statLedReg[2]        stat_led2_clk_pre     DFN1P1       Q       STAT_LED3_c     0.434       2.719
+Clocks.stat_led2_clk.clkout     stat_led2_clk_pre     DFN1E1C1     Q       clkout_i        0.434       2.869
+ledcontrol.spLedReg[1]          stat_led2_clk_pre     DFN1P1       Q       SP_LED_c[1]     0.434       3.033
+ledcontrol.spLedReg[2]          stat_led2_clk_pre     DFN1P1       Q       SP_LED_c[2]     0.434       3.033
+ledcontrol.spLedReg[3]          stat_led2_clk_pre     DFN1P1       Q       SP_LED_c[3]     0.434       3.033
+ledcontrol.spLedReg[4]          stat_led2_clk_pre     DFN1P1       Q       SP_LED_c[4]     0.434       3.033
+ledcontrol.spLedReg[5]          stat_led2_clk_pre     DFN1P1       Q       SP_LED_c[5]     0.434       3.033
+ledcontrol.spLedReg[6]          stat_led2_clk_pre     DFN1P1       Q       SP_LED_c[6]     0.434       3.033
+============================================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                Starting                                                   Required          
+Instance        Reference             Type     Pin           Net           Time         Slack
+                Clock                                                                        
+---------------------------------------------------------------------------------------------
+HEARTBEAT       stat_led2_clk_pre     Port     HEARTBEAT     HEARTBEAT     0.000        0.000
+RX_LED1         stat_led2_clk_pre     Port     RX_LED1       RX_LED1       0.000        0.000
+RX_LED2         stat_led2_clk_pre     Port     RX_LED2       RX_LED2       0.000        0.000
+TX_LED1         stat_led2_clk_pre     Port     TX_LED1       TX_LED1       0.000        0.000
+TX_LED2         stat_led2_clk_pre     Port     TX_LED2       TX_LED2       0.000        0.000
+STAT_LED1       stat_led2_clk_pre     Port     STAT_LED1     STAT_LED1     0.000        2.633
+STAT_LED2       stat_led2_clk_pre     Port     STAT_LED2     STAT_LED2     0.000        2.633
+STAT_LED3       stat_led2_clk_pre     Port     STAT_LED3     STAT_LED3     0.000        2.633
+SP_LED[7:0]     stat_led2_clk_pre     Port     SP_LED[1]     SP_LED[1]     0.000        2.853
+SP_LED[7:0]     stat_led2_clk_pre     Port     SP_LED[2]     SP_LED[2]     0.000        2.853
+=============================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        2.633
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.633
+
+    Number of logic level(s):                1
+    Starting point:                          ledcontrol.statLedReg[0] / Q
+    Ending point:                            STAT_LED1 / STAT_LED1
+    The start point is clocked by            stat_led2_clk_pre [rising] on pin CLK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                          Pin           Pin               Arrival     No. of    
+Name                         Type       Name          Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------
+ledcontrol.statLedReg[0]     DFN1C1     Q             Out     0.434     0.434       -         
+STAT_LED1_c                  Net        -             -       0.202     -           2         
+STAT_LED1_pad                OUTBUF     D             In      -         0.635       -         
+STAT_LED1_pad                OUTBUF     PAD           Out     1.998     2.633       -         
+STAT_LED1                    Net        -             -       0.000     -           1         
+STAT_LED1                    Port       STAT_LED1     Out     -         2.633       -         
+==============================================================================================
+
+
+Path information for path number 2: 
+    Propagation time:                        2.633
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.633
+
+    Number of logic level(s):                1
+    Starting point:                          ledcontrol.statLedReg[1] / Q
+    Ending point:                            STAT_LED2 / STAT_LED2
+    The start point is clocked by            stat_led2_clk_pre [rising] on pin CLK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                          Pin           Pin               Arrival     No. of    
+Name                         Type       Name          Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------
+ledcontrol.statLedReg[1]     DFN1P1     Q             Out     0.434     0.434       -         
+STAT_LED2_c                  Net        -             -       0.202     -           2         
+STAT_LED2_pad                OUTBUF     D             In      -         0.635       -         
+STAT_LED2_pad                OUTBUF     PAD           Out     1.998     2.633       -         
+STAT_LED2                    Net        -             -       0.000     -           1         
+STAT_LED2                    Port       STAT_LED2     Out     -         2.633       -         
+==============================================================================================
+
+
+Path information for path number 3: 
+    Propagation time:                        2.633
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.633
+
+    Number of logic level(s):                1
+    Starting point:                          ledcontrol.statLedReg[2] / Q
+    Ending point:                            STAT_LED3 / STAT_LED3
+    The start point is clocked by            stat_led2_clk_pre [rising] on pin CLK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                          Pin           Pin               Arrival     No. of    
+Name                         Type       Name          Dir     Delay     Time        Fan Out(s)
+----------------------------------------------------------------------------------------------
+ledcontrol.statLedReg[2]     DFN1P1     Q             Out     0.434     0.434       -         
+STAT_LED3_c                  Net        -             -       0.202     -           2         
+STAT_LED3_pad                OUTBUF     D             In      -         0.635       -         
+STAT_LED3_pad                OUTBUF     PAD           Out     1.998     2.633       -         
+STAT_LED3                    Net        -             -       0.000     -           1         
+STAT_LED3                    Port       STAT_LED3     Out     -         2.633       -         
+==============================================================================================
+
+
+Path information for path number 4: 
+    Propagation time:                        2.869
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.869
+
+    Number of logic level(s):                2
+    Starting point:                          Clocks.stat_led2_clk.clkout / Q
+    Ending point:                            HEARTBEAT / HEARTBEAT
+    The start point is clocked by            stat_led2_clk_pre [rising] on pin CLK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                Pin           Pin               Arrival     No. of    
+Name                                             Type         Name          Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------------------------------------
+Clocks.stat_led2_clk.clkout                      DFN1E1C1     Q             Out     0.434     0.434       -         
+clkout_i                                         Net          -             -       0.000     -           2         
+Clocks.stat_led2_clk.clkout_netprop_RNIGMBG1     MX2          B             In      -         0.434       -         
+Clocks.stat_led2_clk.clkout_netprop_RNIGMBG1     MX2          Y             Out     0.437     0.871       -         
+TX_LED1_c_c_c                                    Net          -             -       0.000     -           19        
+HEARTBEAT_pad                                    OUTBUF       D             In      -         0.871       -         
+HEARTBEAT_pad                                    OUTBUF       PAD           Out     1.998     2.869       -         
+HEARTBEAT                                        Net          -             -       0.000     -           1         
+HEARTBEAT                                        Port         HEARTBEAT     Out     -         2.869       -         
+====================================================================================================================
+
+
+Path information for path number 5: 
+    Propagation time:                        2.869
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 2.869
+
+    Number of logic level(s):                2
+    Starting point:                          Clocks.stat_led2_clk.clkout / Q
+    Ending point:                            TX_LED1 / TX_LED1
+    The start point is clocked by            stat_led2_clk_pre [rising] on pin CLK
+    The end   point is clocked by            System [rising]
+
+Instance / Net                                                Pin         Pin               Arrival     No. of    
+Name                                             Type         Name        Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------------
+Clocks.stat_led2_clk.clkout                      DFN1E1C1     Q           Out     0.434     0.434       -         
+clkout_i                                         Net          -           -       0.000     -           2         
+Clocks.stat_led2_clk.clkout_netprop_RNIGMBG1     MX2          B           In      -         0.434       -         
+Clocks.stat_led2_clk.clkout_netprop_RNIGMBG1     MX2          Y           Out     0.437     0.871       -         
+TX_LED1_c_c_c                                    Net          -           -       0.000     -           19        
+TX_LED1_pad                                      OUTBUF       D           In      -         0.871       -         
+TX_LED1_pad                                      OUTBUF       PAD         Out     1.998     2.869       -         
+TX_LED1                                          Net          -           -       0.000     -           1         
+TX_LED1                                          Port         TX_LED1     Out     -         2.869       -         
+==================================================================================================================
+
+
+
+
+====================================
+Detailed Report for Clock: System
+====================================
+
+
+
+Starting Points with Worst Slack
+********************************
+
+               Starting                                             Arrival          
+Instance       Reference     Type     Pin            Net            Time        Slack
+               Clock                                                                 
+-------------------------------------------------------------------------------------
+CAN_RX         System        Port     CAN_RX         CAN_RX         0.000       3.075
+CAN_TX         System        Port     CAN_TX         CAN_TX         0.000       3.075
+RESET_N        System        Port     RESET_N        RESET_N        0.000       3.123
+MEL_ERROR      System        Port     MEL_ERROR      MEL_ERROR      0.000       3.719
+MEL_ENABLE     System        Port     MEL_ENABLE     MEL_ENABLE     0.000       3.790
+MEL_INT        System        Port     MEL_INT        MEL_INT        0.000       3.974
+PCI_GNT0       System        Port     PCI_GNT0       PCI_GNT0       0.000       5.000
+PCI_GPERR      System        Port     PCI_GPERR      PCI_GPERR      0.000       5.000
+PCI_INTB       System        Port     PCI_INTB       PCI_INTB       0.000       5.000
+PCI_IRDY       System        Port     PCI_IRDY       PCI_IRDY       0.000       5.000
+=====================================================================================
+
+
+Ending Points with Worst Slack
+******************************
+
+                 Starting                                           Required          
+Instance         Reference     Type     Pin           Net           Time         Slack
+                 Clock                                                                
+--------------------------------------------------------------------------------------
+TP147            System        Port     TP147         TP147         0.000        3.003
+TP148            System        Port     TP148         TP148         0.000        3.003
+FPGA_DONE        System        Port     FPGA_DONE     FPGA_DONE     0.000        3.037
+TP150            System        Port     TP150         TP150         0.000        3.094
+TP134            System        Port     TP134         TP134         0.000        3.454
+TP133            System        Port     TP133         TP133         0.000        3.503
+TP135            System        Port     TP135         TP135         0.000        3.632
+PCI_AD[31:0]     System        Port     PCI_AD[0]     PCI_AD[0]     0.000        4.712
+PCI_AD[31:0]     System        Port     PCI_AD[1]     PCI_AD[1]     0.000        4.712
+PCI_AD[31:0]     System        Port     PCI_AD[2]     PCI_AD[2]     0.000        4.712
+======================================================================================
+
+
+
+Worst Path Information
+***********************
+
+
+Path information for path number 1: 
+    Propagation time:                        3.003
+    + Clock delay at starting point:         0.000 (ideal)
+    - Requested Period:                      0.000
+    - Clock delay at ending point:           0.000 (ideal)
+    = Slack (non-critical) :                 3.003
+
+    Number of logic level(s):                2
+    Starting point:                          CAN_RX / CAN_RX
+    Ending point:                            TP147 / TP147
+    The start point is clocked by            System [rising]
+    The end   point is clocked by            System [rising]
+
+Instance / Net                Pin        Pin               Arrival     No. of    
+Name               Type       Name       Dir     Delay     Time        Fan Out(s)
+---------------------------------------------------------------------------------
+CAN_RX             Port       CAN_RX     In      0.000     0.000       -         
+CAN_RX             Net        -          -       0.000     -           1         
+CAN_RX_pad         INBUF      PAD        In      -         0.000       -         
+CAN_RX_pad         INBUF      Y          Out     0.837     0.837       -         
+TP147_c_c          Net        -          -       0.168     -           1         
+TP147_pad          OUTBUF     D          In      -         1.005       -         
+TP147_pad          OUTBUF     PAD        Out     1.998     3.003       -         
+TP147              Net        -          -       0.000     -           1         
+TP147              Port       TP147      Out     -         3.003       -         
+=================================================================================
+
+
+
+##### END OF TIMING REPORT #####]
+

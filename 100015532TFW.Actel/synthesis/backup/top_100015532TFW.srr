@@ -1,0 +1,251 @@
+#Build: Synplify Pro E-2010.09A-1, Build 006R, Oct  6 2010
+#install: C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1
+#OS:  6.1
+#Hostname: TEM1TESTDEV01
+
+#Implementation: synthesis
+
+#Wed Apr 27 09:29:39 2011
+
+$ Start of Compile
+#Wed Apr 27 09:29:39 2011
+
+Synopsys Verilog Compiler, version comp520rcp1, Build 028R, built Sep 23 2010
+@N|Running in 32-bit mode
+Copyright (C) 1994-2010, Synopsys Inc.  All Rights Reserved
+
+@I::"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\proasic\proasic3e.v"
+@I::"C:\Actel\Libero_v9.1\Synopsys\synplify_E201009A-1\lib\vlog\hypermods.v"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\pci_emu_target.v"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\CAN_SJA1000.v"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\Timer_Counter.v"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\Oscillator_Counter.v"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\dual_port_ram.v"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\ADC_AD7663AS.V"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\RS485.v"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\BRIDGE_CONT.v"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\BRAKE_CONT.v"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\CLK_DIV.V"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\DAC_AD8803AR.v"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\MEL.v"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\HOTLink_CY7C9689A.v"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\LED_CONTROL.v"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\ClkGen.v"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\manchester_decoder.v"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\manchester_encoder.v"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\manchester_ed.v"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\enet_if.v"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\AdderDecode.v"
+@I::"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\top_100015532-TFW.v"
+Verilog syntax check successful!
+Selecting top level module top_100015532TFW
+@E: CG389 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\pci_emu_target.v":96:9:96:19|Reference to undefined module BUFG
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\pci_emu_target.v":51:7:51:20|Synthesizing module PCI_EMU_TARGET
+
+@W: CG141 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\pci_emu_target.v":96:9:96:19|Creating black_box for BUFG
+Making port I a bidir
+Making port O a bidir
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\CAN_SJA1000.v":36:7:36:17|Synthesizing module CAN_SJA1000
+
+@W: CL113 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\CAN_SJA1000.v":127:1:127:6|Feedback mux created for signal control[2:2].
+@W: CL251 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\CAN_SJA1000.v":127:1:127:6|All reachable assignments to control[2] assign 0, register removed by optimization
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\Timer_Counter.v":21:7:21:19|Synthesizing module TIMER_COUNTER
+
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\Oscillator_Counter.v":27:7:27:24|Synthesizing module OSCILLATOR_COUNTER
+
+@A:"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\Oscillator_Counter.v":74:1:74:6|Feedback mux created for signal sp[31:0]. Did you forget the set/reset assignment for this signal? Specifying a reset value will improve timing and area
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\dual_port_ram.v":19:7:19:18|Synthesizing module DP_RAM_2R_1W
+
+	DATA_WIDTH=32'b00000000000000000000000000010000
+	ADDR_WIDTH=32'b00000000000000000000000000001100
+   Generated name = DP_RAM_2R_1W_16s_12s
+
+@W: CG532 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\dual_port_ram.v":62:1:62:7|Initial statement will only initialize memories through the usage of $readmemh and $readmemb. Everything else is ignored
+@N: CL134 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\dual_port_ram.v":50:1:50:6|Found RAM ram, depth=4096, width=16
+@N: CL134 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\dual_port_ram.v":50:1:50:6|Found RAM ram, depth=4096, width=16
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\ADC_AD7663AS.V":56:7:56:18|Synthesizing module ADC_AD7663AS
+
+@A:"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\ADC_AD7663AS.V":299:1:299:6|Feedback mux created for signal data_length[11:0]. Did you forget the set/reset assignment for this signal? Specifying a reset value will improve timing and area
+@A:"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\ADC_AD7663AS.V":299:1:299:6|Feedback mux created for signal control[1:0]. Did you forget the set/reset assignment for this signal? Specifying a reset value will improve timing and area
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\RS485.v":37:7:37:11|Synthesizing module RS485
+
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\BRIDGE_CONT.v":33:7:33:17|Synthesizing module BRIDGE_CONT
+
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\BRAKE_CONT.v":33:7:33:16|Synthesizing module BRAKE_CONT
+
+@E: CG389 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\CLK_DIV.V":43:6:43:15|Reference to undefined module BUFG
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\CLK_DIV.V":21:7:21:15|Synthesizing module CLOCK_DIV
+
+@E: CS164 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\CLK_DIV.V":43:20:43:25|Expecting wire for output connection, found clkout
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\DAC_AD8803AR.v":29:7:29:18|Synthesizing module DAC_AD8803AR
+
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\Timer_Counter.v":21:7:21:19|Synthesizing module TIMER_COUNTER
+
+	DATA_WIDTH=32'b00000000000000000000000000100000
+   Generated name = TIMER_COUNTER_32s
+
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\MEL.v":39:7:39:9|Synthesizing module MEL
+
+@A:"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\MEL.v":157:1:157:6|Feedback mux created for signal mel_ack_en. Did you forget the set/reset assignment for this signal? Specifying a reset value will improve timing and area
+@A:"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\MEL.v":157:1:157:6|Feedback mux created for signal error_rst. Did you forget the set/reset assignment for this signal? Specifying a reset value will improve timing and area
+@A:"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\MEL.v":157:1:157:6|Feedback mux created for signal cntr_rst. Did you forget the set/reset assignment for this signal? Specifying a reset value will improve timing and area
+@A:"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\MEL.v":157:1:157:6|Feedback mux created for signal ack_time_set[15:0]. Did you forget the set/reset assignment for this signal? Specifying a reset value will improve timing and area
+@E: CG389 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\HOTLink_CY7C9689A.v":169:6:169:16|Reference to undefined module BUFG
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\dual_port_ram.v":19:7:19:18|Synthesizing module DP_RAM_2R_1W
+
+	DATA_WIDTH=32'b00000000000000000000000000001011
+	ADDR_WIDTH=32'b00000000000000000000000000001000
+   Generated name = DP_RAM_2R_1W_11s_8s
+
+@W: CG532 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\dual_port_ram.v":62:1:62:7|Initial statement will only initialize memories through the usage of $readmemh and $readmemb. Everything else is ignored
+@N: CL134 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\dual_port_ram.v":50:1:50:6|Found RAM ram, depth=256, width=11
+@N: CL134 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\dual_port_ram.v":50:1:50:6|Found RAM ram, depth=256, width=11
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\dual_port_ram.v":19:7:19:18|Synthesizing module DP_RAM_2R_1W
+
+	DATA_WIDTH=32'b00000000000000000000000000001001
+	ADDR_WIDTH=32'b00000000000000000000000000001000
+   Generated name = DP_RAM_2R_1W_9s_8s
+
+@W: CG532 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\dual_port_ram.v":62:1:62:7|Initial statement will only initialize memories through the usage of $readmemh and $readmemb. Everything else is ignored
+@N: CL134 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\dual_port_ram.v":50:1:50:6|Found RAM ram, depth=256, width=9
+@N: CL134 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\dual_port_ram.v":50:1:50:6|Found RAM ram, depth=256, width=9
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\HOTLink_CY7C9689A.v":58:7:58:23|Synthesizing module HOTLink_CY7C9689A
+
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\LED_CONTROL.v":21:7:21:17|Synthesizing module LED_CONTROL
+
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\ClkGen.v":44:7:44:12|Synthesizing module ClkGen
+
+@W: CG133 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\ClkGen.v":76:12:76:23|No assignment to SysTo2KHzDiv
+@E: CG389 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\enet_if.v":165:9:165:21|Reference to undefined module BUFG
+@E: CG389 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\enet_if.v":182:6:182:9|Reference to undefined module DCM_PS
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\dual_port_ram.v":19:7:19:18|Synthesizing module DP_RAM_2R_1W
+
+	DATA_WIDTH=32'b00000000000000000000000000001000
+	ADDR_WIDTH=32'b00000000000000000000000000001011
+   Generated name = DP_RAM_2R_1W_8s_11s
+
+@W: CG532 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\dual_port_ram.v":62:1:62:7|Initial statement will only initialize memories through the usage of $readmemh and $readmemb. Everything else is ignored
+@N: CL134 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\dual_port_ram.v":50:1:50:6|Found RAM ram, depth=2048, width=8
+@N: CL134 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\dual_port_ram.v":50:1:50:6|Found RAM ram, depth=2048, width=8
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\dual_port_ram.v":71:7:71:18|Synthesizing module DP_RAM_1R_1W
+
+	DATA_WIDTH=32'b00000000000000000000000000001000
+	ADDR_WIDTH=32'b00000000000000000000000000001011
+   Generated name = DP_RAM_1R_1W_8s_11s
+
+@W: CG532 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\dual_port_ram.v":114:1:114:7|Initial statement will only initialize memories through the usage of $readmemh and $readmemb. Everything else is ignored
+@N: CL134 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\dual_port_ram.v":102:1:102:6|Found RAM ram, depth=2048, width=8
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\manchester_decoder.v":24:7:24:8|Synthesizing module md
+
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\manchester_encoder.v":23:7:23:8|Synthesizing module me
+
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\manchester_ed.v":24:7:24:9|Synthesizing module MED
+
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\enet_if.v":71:7:71:12|Synthesizing module ENETIF
+
+@N: CG179 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\enet_if.v":394:31:394:37|Removing redundant assignment
+@W: CG141 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\enet_if.v":182:6:182:9|Creating black_box for DCM_PS
+Making port CLKFX a bidir
+Making port LOCKED a bidir
+Making port CLKIN a bidir
+	Making port PSCLK an input
+	Making port PSEN an input
+	Making port PSINCDEC an input
+	Making port RST an input
+@A:"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\enet_if.v":421:4:421:9|Feedback mux created for signal tx_dhr[7:0]. Did you forget the set/reset assignment for this signal? Specifying a reset value will improve timing and area
+@A:"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\enet_if.v":257:4:257:9|Feedback mux created for signal txr_cnt[10:0]. Did you forget the set/reset assignment for this signal? Specifying a reset value will improve timing and area
+@A:"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\enet_if.v":257:4:257:9|Feedback mux created for signal rxbuf_rst_cnt[10:0]. Did you forget the set/reset assignment for this signal? Specifying a reset value will improve timing and area
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\AdderDecode.v":58:7:58:17|Synthesizing module AdderDecode
+
+@N: CG364 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\top_100015532-TFW.v":21:7:21:22|Synthesizing module top_100015532TFW
+
+@W: CS149 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\top_100015532-TFW.v":497:12:497:26|Port width mismatch for port OPB_ADDR.  Formal has width 12, Actual 13
+@W: CS149 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\top_100015532-TFW.v":516:12:516:26|Port width mismatch for port OPB_ADDR.  Formal has width 12, Actual 13
+@W: CL169 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\top_100015532-TFW.v":881:1:881:6|Pruning Register sd_output 
+
+@W: CL169 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\top_100015532-TFW.v":877:1:877:6|Pruning Register aq_output 
+
+@W: CL189 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\top_100015532-TFW.v":341:1:341:6|Register bit digital_in[28] is always 0, optimizing ...
+@W: CL260 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\top_100015532-TFW.v":341:1:341:6|Pruning Register bit 28 of digital_in[31:0] 
+
+@N: CL201 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\enet_if.v":257:4:257:9|Trying to extract state machine for register txr_fsm
+Extracted state machine for register txr_fsm
+State machine has 16 reachable states with original encodings of:
+   0000
+   0001
+   0010
+   0011
+   0100
+   0101
+   0110
+   0111
+   1000
+   1001
+   1010
+   1011
+   1100
+   1101
+   1110
+   1111
+@W: CL249 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\enet_if.v":257:4:257:9|Initial value is not supported on state machine txr_fsm
+@W: CL247 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\enet_if.v":74:17:74:22|Input port bit 19 of OPB_DI[19:0] is unused
+
+@A: CL153 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\ClkGen.v":76:12:76:23|*Unassigned bits of SysTo2KHzDiv[15:0] have been referenced and are being tied to 0 - simulation mismatch possible
+@N: CL201 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\HOTLink_CY7C9689A.v":293:1:293:6|Trying to extract state machine for register tx_state
+Extracted state machine for register tx_state
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@W: CL249 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\HOTLink_CY7C9689A.v":293:1:293:6|Initial value is not supported on state machine tx_state
+@N: CL201 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\HOTLink_CY7C9689A.v":358:1:358:6|Trying to extract state machine for register rx_state
+Extracted state machine for register rx_state
+State machine has 5 reachable states with original encodings of:
+   000
+   001
+   010
+   011
+   100
+@W: CL249 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\HOTLink_CY7C9689A.v":358:1:358:6|Initial value is not supported on state machine rx_state
+@N: CL201 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\ADC_AD7663AS.V":116:1:116:6|Trying to extract state machine for register state
+Extracted state machine for register state
+State machine has 24 reachable states with original encodings of:
+   00000
+   00001
+   00010
+   00011
+   00100
+   00101
+   00110
+   00111
+   01000
+   01001
+   01010
+   01011
+   01100
+   01101
+   01110
+   01111
+   10000
+   10001
+   10010
+   10011
+   10100
+   10101
+   10110
+   10111
+@W: CL249 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\ADC_AD7663AS.V":116:1:116:6|Initial value is not supported on state machine state
+@N: CL201 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\CAN_SJA1000.v":93:2:93:7|Trying to extract state machine for register state0
+Extracted state machine for register state0
+State machine has 4 reachable states with original encodings of:
+   00
+   01
+   10
+   11
+@W: CL249 :"T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\hdl\CAN_SJA1000.v":93:2:93:7|Initial value is not supported on state machine state0
+@END
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Wed Apr 27 09:29:40 2011
+
+###########################################################]
