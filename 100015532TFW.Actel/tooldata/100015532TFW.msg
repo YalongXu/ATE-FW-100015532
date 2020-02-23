@@ -28,3 +28,12 @@ Implementation;Synthesis|| MT420 ||@W:Found inferred clock ADC_AD7663AS_1|ram_wr
 Implementation;Synthesis|| MT548 ||@W:Source for clock SYSCLK not found in netlist. Run the constraint checker to verify if constraints are applied correctly.||top_100015532TFW.srr(1062);liberoaction://cross_probe/hdl/file/'D:\git\ATE-FW-100015532\100015532TFW.Actel\synthesis\top_100015532TFW.srr'/linenumber/1062||top_100015532tfw_synth.sdc(14);liberoaction://cross_probe/hdl/file/'d:/git/ate-fw-100015532/100015532tfw.actel/constraint/top_100015532tfw_synth.sdc'/linenumber/14
 Implementation;Compile;RootName:top_100015532TFW
 Implementation;Compile||(null)||Please refer to the log file for details about 1 Error(s) , 680 Warning(s) , 1 Info(s)||top_100015532TFW_compile_log.rpt;liberoaction://open_report/file/top_100015532TFW_compile_log.rpt||(null);(null)
+Implementation;Place and Route||PLC007;liberoaction://open_online_help/89129363||Info: Created quadrant global region Qclock_PCI_RST for global net PCI_RST.||(null);(null)||(null);(null)
+Implementation;Place and Route||PLC007;liberoaction://open_online_help/89129363||Info: Created quadrant global region Qclock_SYSCLK_IN for global net SYSCLK_IN.||(null);(null)||(null);(null)
+Implementation;Place and Route||PLC007;liberoaction://open_online_help/89129363||Info: Created quadrant global region Qclock_clk_data for global net clk_data.||(null);(null)||(null);(null)
+Implementation;Place and Route||PLC007;liberoaction://open_online_help/89129363||Info: Created quadrant global region Qclock_TP152_c for global net TP152_c.||(null);(null)||(null);(null)
+Implementation;Place and Route||PLC007;liberoaction://open_online_help/89129363||Info: Created quadrant global region Qclock_coll_mod/GLA for global net coll_mod/GLA.||(null);(null)||(null);(null)
+Implementation;Place and Route||PLC007;liberoaction://open_online_help/89129363||Info: Created quadrant global region Qclock_rs485_mod/bit_count14 for global net rs485_mod/bit_count14.||(null);(null)||(null);(null)
+Implementation;Place and Route;RootName:top_100015532TFW
+Implementation;Place and Route||(null)||Please refer to the log file for details about 1 Warning(s) , 7 Info(s)||top_100015532TFW_placeroute_log.rpt;liberoaction://open_report/file/top_100015532TFW_placeroute_log.rpt||(null);(null)
+Implementation;Generate Bitstream;RootName:top_100015532TFW

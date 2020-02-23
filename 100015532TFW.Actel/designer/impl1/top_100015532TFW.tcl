@@ -1,5 +1,5 @@
 # Created by Microsemi Libero Software 11.9.0.4
-# Sun Feb 23 11:31:48 2020
+# Sun Feb 23 11:57:05 2020
 
 # (OPEN DESIGN)
 
@@ -14,13 +14,9 @@ set_defvar "IDE_DESIGNERVIEW_REVNUM0" "1"
 set_defvar "IDE_DESIGNERVIEW_ROOTDIR" {D:\git\ATE-FW-100015532\100015532TFW.Actel\designer}
 set_defvar "IDE_DESIGNERVIEW_LASTREV" "1"
 
-
-layout -timing_driven
-report -type "status" {top_100015532TFW_place_and_route_report.txt}
-report -type "globalnet" {top_100015532TFW_globalnet_report.txt}
-report -type "globalusage" {top_100015532TFW_globalusage_report.txt}
-report -type "iobank" {top_100015532TFW_iobank_report.txt}
-report -type "pin" -listby "name" {top_100015532TFW_report_pin_byname.txt}
-report -type "pin" -listby "number" {top_100015532TFW_report_pin_bynumber.txt}
+report -type "timing" -format "TEXT" -analysis "max" -print_summary "yes" -use_slack_threshold "no"                             -print_paths "yes" -max_paths 5 -max_expanded_paths 1                             -max_parallel_paths 1 -include_user_sets "no"                             -include_pin_to_pin "yes" -include_clock_domains "yes"                             -select_clock_domains "no" {top_100015532TFW_maxdelay_timing_report.txt}
+report -type "timing" -format "TEXT" -analysis "min" -print_summary "yes" -use_slack_threshold "no"                             -print_paths "yes" -max_paths 5 -max_expanded_paths 1                             -max_parallel_paths 1 -include_user_sets "no"                             -include_pin_to_pin "yes" -include_clock_domains "yes"                             -select_clock_domains "no" {top_100015532TFW_mindelay_timing_report.txt}
+report -type "timing_violations" -format "TEXT" -analysis "max" -use_slack_threshold "yes" -slack_threshold 0.00                               -limit_max_paths "yes" -max_paths 100 -max_expanded_paths 0                               -max_parallel_paths 1 {top_100015532TFW_maxdelay_timingviolations_report.txt}
+report -type "timing_violations" -format "TEXT" -analysis "min" -use_slack_threshold "yes" -slack_threshold 0.00                               -limit_max_paths "yes" -max_paths 100 -max_expanded_paths 0                               -max_parallel_paths 1 {top_100015532TFW_mindelay_timingviolations_report.txt}
 
 save_design
