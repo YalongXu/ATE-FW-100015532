@@ -1,18 +1,16 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09M-SP1-5
 #--  Project file D:\git\ATE-FW-100015532\100015532TFW.Actel\synthesis\run_options.txt
-#--  Written on Sat Nov 30 14:17:00 2019
+#--  Written on Sun Feb 23 11:30:17 2020
 
 
 #project files
-add_file -verilog "D:/git/ATE-FW-100015532/100015532TFW.Actel/hdl/CLK_DIV.V"
-add_file -verilog "D:/git/ATE-FW-100015532/100015532TFW.Actel/hdl/dual_port_ram.v"
-add_file -verilog "D:/git/ATE-FW-100015532/100015532TFW.Actel/hdl/ADC_AD7663AS.V"
 add_file -verilog "D:/git/ATE-FW-100015532/100015532TFW.Actel/hdl/AdderDecode.v"
 add_file -verilog "D:/git/ATE-FW-100015532/100015532TFW.Actel/hdl/Timer_Counter.v"
 add_file -verilog "D:/git/ATE-FW-100015532/100015532TFW.Actel/hdl/BRAKE_CONT.v"
 add_file -verilog "D:/git/ATE-FW-100015532/100015532TFW.Actel/hdl/BRIDGE_CONT.v"
 add_file -verilog "D:/git/ATE-FW-100015532/100015532TFW.Actel/hdl/CAN_SJA1000.v"
+add_file -verilog "D:/git/ATE-FW-100015532/100015532TFW.Actel/hdl/CLK_DIV.V"
 add_file -verilog "D:/git/ATE-FW-100015532/100015532TFW.Actel/hdl/ClkGen.v"
 add_file -verilog "D:/git/ATE-FW-100015532/100015532TFW.Actel/hdl/DAC_AD8803AR.v"
 add_file -verilog "D:/git/ATE-FW-100015532/100015532TFW.Actel/smartgen/Clock16x/Clock16x.v"
@@ -30,6 +28,8 @@ add_file -verilog "D:/git/ATE-FW-100015532/100015532TFW.Actel/hdl/MEL.v"
 add_file -verilog "D:/git/ATE-FW-100015532/100015532TFW.Actel/hdl/Oscillator_Counter.v"
 add_file -verilog "D:/git/ATE-FW-100015532/100015532TFW.Actel/hdl/pci_emu_target.v"
 add_file -verilog "D:/git/ATE-FW-100015532/100015532TFW.Actel/hdl/RS485.v"
+add_file -verilog "D:/git/ATE-FW-100015532/100015532TFW.Actel/smartgen/Ram4096x16_TPort/Ram4096x16_TPort.v"
+add_file -verilog "D:/git/ATE-FW-100015532/100015532TFW.Actel/hdl/ADC_AD7663AS.V"
 add_file -verilog "D:/git/ATE-FW-100015532/100015532TFW.Actel/hdl/top_100015532-TFW.v"
 add_file -constraint "D:/git/ATE-FW-100015532/100015532TFW.Actel/constraint/top_100015532TFW_synth.sdc"
 

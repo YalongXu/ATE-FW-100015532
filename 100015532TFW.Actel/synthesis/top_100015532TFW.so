@@ -2,5 +2,5 @@
 <SynplifyOutput>
 	<result>Success</result>
 	<design>top_100015532TFW</design>
-	<target_edif>T:\Test Working\KIK2-MSVisualStudio\VMS\100015532\Firmware\100015532TFW.Actel\synthesis\top_100015532TFW.edn</target_edif>
+	<target_edif>D:\git\ATE-FW-100015532\100015532TFW.Actel\synthesis\top_100015532TFW.edn</target_edif>
 </SynplifyOutput>
