@@ -176,7 +176,7 @@ module ADC_AD7663AS(
 			case(state)
 				`S_START: begin
                     AD_CNVST        <=  1'b1;
-                    repeat_times    <=  5'd0;
+                    time_out_count  <= 7'h0;
 					if(sm_toggle == aq_toggle) begin
 						state     <= `S_CNVST;
 						status[0] <= 1'b1;						// status busy

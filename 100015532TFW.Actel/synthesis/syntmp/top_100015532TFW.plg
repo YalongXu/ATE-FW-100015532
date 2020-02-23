@@ -1,4 +1,4 @@
-@P:  Worst Slack : -2.809
+@P:  Worst Slack : -2.944
 @P:  ADC_AD7663AS_0|ram_wr_clk_inferred_clock - Estimated Frequency : NA
 @P:  ADC_AD7663AS_0|ram_wr_clk_inferred_clock - Requested Frequency : 40.0 MHz
 @P:  ADC_AD7663AS_0|ram_wr_clk_inferred_clock - Estimated Period : NA
@@ -9,11 +9,11 @@
 @P:  ADC_AD7663AS_1|ram_wr_clk_inferred_clock - Estimated Period : NA
 @P:  ADC_AD7663AS_1|ram_wr_clk_inferred_clock - Requested Period : 25.000
 @P:  ADC_AD7663AS_1|ram_wr_clk_inferred_clock - Slack : NA
-@P:  PCI_CLK2 - Estimated Frequency : 39.3 MHz
+@P:  PCI_CLK2 - Estimated Frequency : 40.6 MHz
 @P:  PCI_CLK2 - Requested Frequency : 32.0 MHz
-@P:  PCI_CLK2 - Estimated Period : 25.445
+@P:  PCI_CLK2 - Estimated Period : 24.630
 @P:  PCI_CLK2 - Requested Period : 31.250
-@P:  PCI_CLK2 - Slack : 2.902
+@P:  PCI_CLK2 - Slack : 3.310
 @P:  SD_CLK16x - Estimated Frequency : 110.4 MHz
 @P:  SD_CLK16x - Requested Frequency : 160.0 MHz
 @P:  SD_CLK16x - Estimated Period : 9.059
@@ -44,21 +44,21 @@
 @P:  me|clkdiv_inferred_clock[3] - Estimated Period : 6.006
 @P:  me|clkdiv_inferred_clock[3] - Requested Period : 25.000
 @P:  me|clkdiv_inferred_clock[3] - Slack : 18.994
-@P:  pci_16kHz - Estimated Frequency : 77.1 MHz
+@P:  pci_16kHz - Estimated Frequency : 77.5 MHz
 @P:  pci_16kHz - Requested Frequency : 1.0 MHz
-@P:  pci_16kHz - Estimated Period : 12.964
+@P:  pci_16kHz - Estimated Period : 12.901
 @P:  pci_16kHz - Requested Period : 1000.000
-@P:  pci_16kHz - Slack : 987.036
+@P:  pci_16kHz - Slack : 987.099
 @P:  pci_clk_div - Estimated Frequency : 87.4 MHz
 @P:  pci_clk_div - Requested Frequency : 1.0 MHz
 @P:  pci_clk_div - Estimated Period : 11.443
 @P:  pci_clk_div - Requested Period : 1000.000
 @P:  pci_clk_div - Slack : 494.279
-@P:  sclk - Estimated Frequency : 58.2 MHz
+@P:  sclk - Estimated Frequency : 65.5 MHz
 @P:  sclk - Requested Frequency : 20.0 MHz
-@P:  sclk - Estimated Period : 17.180
+@P:  sclk - Estimated Period : 15.258
 @P:  sclk - Requested Period : 50.000
-@P:  sclk - Slack : 16.410
+@P:  sclk - Slack : 17.371
 @P:  stat_led2_clk - Estimated Frequency : 104.1 MHz
 @P:  stat_led2_clk - Requested Frequency : 1.0 MHz
 @P:  stat_led2_clk - Estimated Period : 9.607
@@ -73,62 +73,62 @@
 @P:  top_100015532TFW|TP156_inferred_clock - Requested Frequency : 40.0 MHz
 @P:  top_100015532TFW|TP156_inferred_clock - Estimated Period : 22.801
 @P:  top_100015532TFW|TP156_inferred_clock - Requested Period : 25.000
-@P:  top_100015532TFW|TP156_inferred_clock - Slack : 1.820
-@P:  System - Estimated Frequency : 39.4 MHz
+@P:  top_100015532TFW|TP156_inferred_clock - Slack : 2.199
+@P:  System - Estimated Frequency : 39.9 MHz
 @P:  System - Requested Frequency : 40.0 MHz
-@P:  System - Estimated Period : 25.353
+@P:  System - Estimated Period : 25.072
 @P:  System - Requested Period : 25.000
-@P:  System - Slack : -0.353
-@P:  Total Area : 15088.0
-@P:  Total Area : 123.0
-@P:  Total Area : 532.0
+@P:  System - Slack : -0.072
+@P:  Total Area : 15106.0
+@P:  Total Area : 116.0
+@P:  Total Area : 530.0
 @P:  Total Area : 108.0
 @P:  Total Area : 62.0
 @P:  Total Area : 46.0
-@P:  Total Area : 10.0
+@P:  Total Area : 11.0
 @P:  Total Area : 10.0
 @P:  Total Area : 3.0
-@P:  Total Area : 1553.0
+@P:  Total Area : 1602.0
 @P:  Total Area : 82.0
-@P:  Total Area : 148.0
 @P:  Total Area : 149.0
-@P:  Total Area : 148.0
+@P:  Total Area : 149.0
+@P:  Total Area : 149.0
 @P:  Total Area : 149.0
 @P:  Total Area : 149.0
 @P:  Total Area : 149.0
 @P:  Total Area : 150.0
 @P:  Total Area : 80.0
 @P:  Total Area : 33.0
-@P:  Total Area : 816.0
+@P:  Total Area : 815.0
 @P:  Total Area : 11.0
 @P:  Total Area : 20.0
 @P:  Total Area : 150.0
-@P:  Total Area : 583.0
-@P:  Total Area : 141.0
-@P:  Total Area : 248.0
+@P:  Total Area : 579.0
+@P:  Total Area : 142.0
+@P:  Total Area : 249.0
 @P:  Total Area : 149.0
-@P:  Total Area : 772.0
+@P:  Total Area : 788.0
 @P:  Total Area : 39.0
-@P:  Total Area : 772.0
+@P:  Total Area : 782.0
 @P:  Total Area : 39.0
-@P:  Total Area : 1283.0
+@P:  Total Area : 1295.0
 @P:  Total Area : 39.0
-@P:  Total Area : 1312.0
+@P:  Total Area : 1291.0
 @P:  Total Area : 39.0
-@P:  Total Area : 1290.0
+@P:  Total Area : 1306.0
+@P:  Total Area : 39.0
+@P:  Total Area : 1306.0
 @P:  Total Area : 39.0
 @P:  Total Area : 1300.0
 @P:  Total Area : 39.0
-@P:  Total Area : 1357.0
-@P:  Total Area : 39.0
-@P:  Total Area : 1074.0
-@P:  Total Area : 455.0
-@P:  Total Area : 20.0
-@P:  Total Area : 476.0
-@P:  Total Area : 23.0
-@P:  Total Area : 116.0
-@P:  Total Area : 45.0
-@P:  Total Area : 558.0
-@P:  Total Area : 261.0
-@P:  Total Area : 15088.0
-@P:  CPU Time : 0h:00m:35s
+@P:  Total Area : 1097.0
+@P:  Total Area : 447.0
+@P:  Total Area : 17.0
+@P:  Total Area : 488.0
+@P:  Total Area : 22.0
+@P:  Total Area : 128.0
+@P:  Total Area : 47.0
+@P:  Total Area : 458.0
+@P:  Total Area : 329.0
+@P:  Total Area : 15106.0
+@P:  CPU Time : 0h:00m:32s

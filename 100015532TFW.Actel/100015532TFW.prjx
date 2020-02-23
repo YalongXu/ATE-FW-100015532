@@ -49,33 +49,33 @@ SIZE="1695"
 ENDFILE
 VALUE "<project>\designer\impl1\top_100015532TFW.adb,adb"
 STATE="ood"
-TIME="1575116084"
-SIZE="15338496"
+TIME="1582430346"
+SIZE="15988736"
 ENDFILE
 VALUE "<project>\designer\impl1\top_100015532TFW.ide_des,ide_des"
 STATE="utd"
-TIME="1575116087"
+TIME="1582430350"
 SIZE="1277"
 ENDFILE
 VALUE "<project>\designer\impl1\top_100015532TFW.stp,stp"
 STATE="ood"
-TIME="1575116106"
-SIZE="875677"
+TIME="1582430369"
+SIZE="867879"
 ENDFILE
 VALUE "<project>\designer\impl1\top_100015532TFW_fp\projectData\top_100015532TFW.pdb,pdb"
 STATE="utd"
-TIME="1575116106"
-SIZE="631386"
+TIME="1582430369"
+SIZE="626584"
 ENDFILE
 VALUE "<project>\designer\impl1\top_100015532TFW_fp\top_100015532TFW.pro,pro"
 STATE="utd"
-TIME="1575116106"
+TIME="1582430369"
 SIZE="2233"
 ENDFILE
 VALUE "<project>\hdl\ADC_AD7663AS.V,hdl"
 STATE="utd"
-TIME="1582428145"
-SIZE="10485"
+TIME="1582446123"
+SIZE="10483"
 ENDFILE
 VALUE "<project>\hdl\AdderDecode.v,hdl"
 STATE="utd"
@@ -489,19 +489,24 @@ TIME="1304006380"
 SIZE="5632"
 PARENT="<project>\smartgen\Ram4096x16_TPort\Ram4096x16_TPort.cxf"
 ENDFILE
-VALUE "<project>\synthesis\synwork\layer0.so,so"
-STATE="utd"
-TIME="1582428255"
-SIZE="159"
+VALUE "<project>\synthesis\top_100015532TFW.edn,syn_edn"
+STATE="ood"
+TIME="1582428659"
+SIZE="7472556"
 ENDFILE
 VALUE "<project>\synthesis\top_100015532TFW.so,so"
 STATE="utd"
-TIME="1575097313"
+TIME="1582428659"
 SIZE="244"
+ENDFILE
+VALUE "<project>\synthesis\top_100015532TFW_sdc.sdc,syn_sdc"
+STATE="ood"
+TIME="1582428658"
+SIZE="1275"
 ENDFILE
 VALUE "<project>\synthesis\top_100015532TFW_syn.prj,prj"
 STATE="utd"
-TIME="1575097314"
+TIME="1582428660"
 SIZE="4084"
 ENDFILE
 ENDLIST
@@ -563,19 +568,6 @@ LIST "top_100015532TFW::work"
 FILE "<project>\hdl\top_100015532-TFW.v,hdl"
 LIST SynthesisConstraints
 VALUE "<project>\constraint\top_100015532TFW_synth.sdc,sdc"
-ENDLIST
-LIST ProjectState5.1
-LIST Impl1
-ideSYNTHESIS(<project>\synthesis\top_100015532TFW.edn,syn_edn)=StateFailure
-ideSYNTHESIS(<project>\synthesis\top_100015532TFW.vm,syn_vm)=StateFailure
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
 ENDLIST
 ENDLIST
 ENDLIST
@@ -719,19 +711,6 @@ IS32BIT="1"
 EndProfile
 ENDLIST
 LIST ProjectState5.1
-LIST "top_100015532TFW::work"
-LIST Impl1
-ideSYNTHESIS(<project>\synthesis\top_100015532TFW.edn,syn_edn)=StateFailure
-ideSYNTHESIS(<project>\synthesis\top_100015532TFW.vm,syn_vm)=StateFailure
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -746,7 +725,7 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Synthesize:synplify.log
+ReportsCurrentItem;Generate Programming Data:top_100015532TFW_prgdata_log.rpt
 HDL;hdl\top_100015532-TFW.v;0
 HDL;hdl\AdderDecode.v;0
 StartPage;StartPage;0
